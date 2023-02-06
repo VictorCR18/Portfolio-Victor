@@ -1,0 +1,29 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+}
+
+.main-presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+  width: 100%;
+}
+
+span {
+  color: #c778dd;
+  font-size: 32px;
+}
+
+.ilustration {
+  width: auto;
+  height: auto;
+}
