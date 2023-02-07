@@ -1,0 +1,20 @@
+.title-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.title-projects-label {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.title-hastag {
+  width: 20px;
+  height: 42px;
+}

@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { Presentation } from "../../components/Presentation";
+import { Projects } from "../../components/Projects";
 
 import "./styles.css";
 
@@ -9,6 +10,7 @@ export function Home() {
       <div className="main-home">
         <Header />
         <Presentation />
+        <Projects />
       </div>
     </div>
   );
