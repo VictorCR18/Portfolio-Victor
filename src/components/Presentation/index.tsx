@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import Image from "../../assets/Image.png";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/Logo.svg";
 import Dots from "../../assets/Dots.svg";
 import Aspas from "../../assets/Aspas.svg";
 
