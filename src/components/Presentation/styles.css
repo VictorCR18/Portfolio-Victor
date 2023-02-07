@@ -1,21 +1,28 @@
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1024px;
-}
-
 .main-presentation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 h2 {
   color: #ffffff;
   font-size: 32px;
-  width: 100%;
 }
 
 span {
@@ -23,7 +30,104 @@ span {
   font-size: 32px;
 }
 
+button {
+  width: 148px;
+  height: 37px;
+  background-color: #2c3036;
+  border: solid #c778dd 1px;
+  font-weight: 500;
+  color: #ffffff;
+}
+button:hover,
+button:focus {
+  background-color: #c778dd;
+}
+
 .ilustration {
   width: auto;
   height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Logo {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  left: -9px;
+  top: 77px;
+}
+
+.Image {
+  position: relative;
+}
+
+.Dots {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  left: 355px;
+  top: 238px;
+}
+
+.status {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #abb2bf;
+  padding: 8px;
+}
+
+.rectangle {
+  width: 16px;
+  height: 16px;
+  background: #c778dd;
+  border: 1px solid #c778dd;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 10px;
+}
+
+.box-quote {
+  width: 712px;
+  height: auto;
+  margin: 112px 0 137px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.quote {
+  border: 1px solid #abb2bf;
+  padding: 32px;
+}
+
+.author {
+  width: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #abb2bf;
+  border-top: 0;
+}
+
+.Aspas1 {
+  position: absolute;
+  left: 11px;
+  top: -14px;
+}
+
+.Aspas2 {
+  position: absolute;
+  right: 16.53px;
+  top: 112px;
 }
