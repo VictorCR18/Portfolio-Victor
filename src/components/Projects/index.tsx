@@ -8,9 +8,13 @@ export function Projects() {
     <div className="main-projects">
       <div className="title-projects">
         <label className="title-projects-label">
-          <img className="title-hastag" src={Hastag} />projects
+          <div className="group-title">
+            <img className="title-hastag" src={Hastag} />
+            projects
+          </div>
+          <img src={Line} />
         </label>
-        <img src={Line} />
+        <a className="link-projects">View all ~~&gt;</a>
       </div>
     </div>
   );

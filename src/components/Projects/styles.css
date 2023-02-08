@@ -2,10 +2,15 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-projects-label{
+  display: flex;
   gap: 16px;
 }
 
-.title-projects-label {
+.group-title {
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -17,4 +22,8 @@
 .title-hastag {
   width: 20px;
   height: 42px;
+}
+
+.link-projects{
+  color:#ffffff ;
 }
