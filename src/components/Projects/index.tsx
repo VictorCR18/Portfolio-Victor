@@ -1,7 +1,11 @@
 import Hastag from "../../assets/Hastag.svg";
 import Line from "../../assets/Line2.svg";
 
+import Countdown from "../../assets/Countdown.png";
+
 import "./styles.css";
+
+import { Cards } from "../Cards";
 
 export function Projects() {
   return (
@@ -16,6 +20,12 @@ export function Projects() {
         </label>
         <a className="link-projects">View all ~~&gt;</a>
       </div>
+      <Cards
+        image={Countdown}
+        tools="HTML CSS JavaScript"
+        nameProj="Countdown"
+        description="Regressive counter"
+      />
     </div>
   );
 }

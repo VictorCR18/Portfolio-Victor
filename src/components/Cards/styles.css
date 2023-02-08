@@ -1,0 +1,45 @@
+.main-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 330.58px;
+  height: auto;
+  border: 1px solid #abb2bf;
+  margin-bottom: 106px;
+}
+
+.tools-card {
+  border: #abb2bf 1px solid;
+  padding: 8px;
+}
+
+.image-card {
+  max-width: 330.58px;
+  height: 201px;
+}
+
+.image {
+  width: 100%;
+  min-height: 201px;
+}
+
+.content-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h3 {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
