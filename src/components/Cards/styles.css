@@ -23,7 +23,7 @@
 }
 
 .content-card {
-  padding: 16px;
+  padding: 16px 16px 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -42,4 +42,15 @@ h3 {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+}
+
+.link-card {
+  padding: 8px 16px;
+  border: solid #c778dd 1px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.link-card:hover,
+.link-card:focus {
+  background-color: #c778dd;
 }

@@ -12,6 +12,7 @@ export function Cards(props: {
   tools: string;
   nameProj: string;
   description: string;
+  link: string;
 }) {
   return (
     <div className="main-card">
@@ -25,7 +26,7 @@ export function Cards(props: {
         <h3>{props.nameProj}</h3>
         <label>{props.description}</label>
         <div className="button-card">
-          <button>Live&lt;~&gt;</button>
+          <a className="link-card" href={props.link}>Live&lt;~&gt;</a>
         </div>
       </div>
     </div>

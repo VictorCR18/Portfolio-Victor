@@ -25,6 +25,7 @@ export function Projects() {
         tools="HTML CSS JavaScript"
         nameProj="Countdown"
         description="Regressive counter"
+        link="http://countdown-victor.netlify.app"
       />
     </div>
   );
