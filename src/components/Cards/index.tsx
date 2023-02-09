@@ -5,6 +5,7 @@ interface Cards {
   tools: string;
   NameProj: string;
   description: string;
+  link: string;
 }
 
 export function Cards(props: {

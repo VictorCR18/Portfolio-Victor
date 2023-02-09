@@ -1,0 +1,69 @@
+.main-skills {
+  position: relative;
+}
+
+.titles-skills {
+  display: flex;
+  gap: 16px;
+}
+
+.box-pictures {
+  position: relative;
+  width: 50%;
+}
+
+.Dots1 {
+  gap: 16px;
+  width: 63px;
+  height: 63px;
+  left: 205px;
+  top: 1606px;
+  position: absolute;
+}
+
+.Dots2 {
+  gap: 16px;
+  width: 63px;
+  height: 63px;
+  left: 382px;
+  top: 1711px;
+  position: absolute;
+}
+
+.Rectangle1 {
+  width: 86px;
+  height: 86px;
+  left: 432px;
+  top: 1568px;
+  position: absolute;
+}
+
+.Rectangle2 {
+  width: 52px;
+  height: 52px;
+  left: 502px;
+  top: 1761px;
+  position: absolute;
+}
+
+.Logo2 {
+  width: 113px;
+  height: 113px;
+  left: 220px;
+  top: 1737px;
+  position: absolute;
+}
+
+.content-skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-tools {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  flex-wrap: wrap-reverse;
+  width: 50%;
+}

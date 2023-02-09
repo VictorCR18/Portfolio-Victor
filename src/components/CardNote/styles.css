@@ -1,0 +1,30 @@
+.main-cardnote {
+  display: flex;
+  flex-direction: column;
+  max-width: 178px;
+  height: auto;
+  /* padding: 16px 16px 24px; */
+}
+
+.content-cardnote {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-cardnote {
+  border: 1px solid #abb2bf;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description-cardnode {
+  border: 1px solid #abb2bf;
+  border-top: none;
+  padding: 8px;
+}

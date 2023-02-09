@@ -1,6 +1,7 @@
 import { Header } from "../../components/Header";
 import { Presentation } from "../../components/Presentation";
 import { Projects } from "../../components/Projects";
+import { Skills } from "../../components/Skills";
 
 import "./styles.css";
 
@@ -11,6 +12,7 @@ export function Home() {
         <Header />
         <Presentation />
         <Projects />
+        <Skills />
       </div>
     </div>
   );
