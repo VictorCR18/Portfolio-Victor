@@ -6,6 +6,7 @@
 }
 
 .content {
+  max-width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -94,9 +95,9 @@ button:focus {
 }
 
 .box-quote {
-  width: 712px;
+  max-width: 712px;
   height: auto;
-  margin: 112px 0 137px;
+  margin: 112px 156px 137px;
   position: relative;
   display: flex;
   flex-direction: column;
