@@ -36,7 +36,16 @@
   justify-content: space-between;
 }
 
+.label-header {
+  width: auto;
+}
+
+.label-color {
+  color: #c778dd;
+}
+
 .select {
+  width: auto;
   background-color: #2c3036;
   border: none;
 }

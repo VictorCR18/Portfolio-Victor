@@ -10,10 +10,18 @@ export function Header() {
         </a>
       </div>
       <div className="navbar">
-        <label>#home</label>
-        <label>#works</label>
-        <label>#about-me</label>
-        <label>#contacts</label>
+        <a className="label-header">
+          <label className="label-color">#</label>home
+        </a>
+        <a className="label-header">
+          <label className="label-color">#</label>works
+        </a>
+        <a className="label-header">
+          <label className="label-color">#</label>about-me
+        </a>
+        <a className="label-header">
+          <label className="label-color">#</label>contacts
+        </a>
         <select className="select" name="language">
           <option value="EN">EN</option>
           <option value="PT-Br">PT</option>
