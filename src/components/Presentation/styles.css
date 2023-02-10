@@ -63,7 +63,8 @@ button:focus {
 }
 
 .Image {
-  width: auto;
+  max-width: 457px;
+  height: auto;
   position: relative;
 }
 

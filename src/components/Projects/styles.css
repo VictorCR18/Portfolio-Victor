@@ -1,8 +1,10 @@
 .main-projects {
+  width: 100%;
   margin-bottom: 106px;
 }
 
 .title-projects {
+  width: 100%;
   margin-bottom: 48px;
   display: flex;
   align-items: center;
@@ -12,6 +14,8 @@
 
 .title-projects-label {
   display: flex;
+  width: 100%;
+  align-items: center;
   gap: 16px;
 }
 
@@ -21,7 +25,17 @@
 }
 
 .link-projects {
+  white-space: nowrap;
+  width: auto;
+  line-height: 21px;
   color: #ffffff;
+}
+
+.bar-projects {
+  width: 100%;
+  max-width: 511px;
+  height: 1px;
+  background: #c778dd;
 }
 
 .Cards {

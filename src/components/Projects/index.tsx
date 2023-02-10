@@ -1,4 +1,3 @@
-import Line from "../../assets/Line2.svg";
 import Countdown from "../../assets/Countdown.png";
 import LoginForm from "../../assets/Login-Form-CSS.png";
 
@@ -13,7 +12,7 @@ export function Projects() {
       <div className="title-projects">
         <label className="title-projects-label">
           <Titles symbol="#" title="projects" />
-          <img src={Line} />
+          <div className="bar-projects"></div>
         </label>
         <a className="link-projects">View all ~~&gt;</a>
       </div>
