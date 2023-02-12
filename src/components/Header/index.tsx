@@ -1,22 +1,12 @@
 import "./styles.css";
 import Union from "../../assets/Union.svg";
 
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import MyContext from "../Context/translateContext";
 
 export function Header() {
-  const {
-    t,
-    i18n: { changeLanguage, language },
-  } = useTranslation();
 
-  const [currentLanguage, setCurrentLanguage] = useState(language);
-
-  const handleChangeLanguage = (event: any) => {
-    const newLanguage = currentLanguage === "en" ? "pt" : "en";
-    changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage);
-  };
+  const { t, handleChangeLanguage }: any = useContext(MyContext);
 
   return (
     <div className="main-header">
@@ -27,23 +17,28 @@ export function Header() {
       </div>
       <div className="navbar">
         <a className="label-header">
-          <label className="label-color">#</label>home
+          <label className="label-color">#</label>{t('nav.navHome')}
         </a>
         <a className="label-header">
           <label className="label-color">#</label>
-          {t("navWorks")}
+          {t("nav.navWorks")}
         </a>
         <a className="label-header">
-          <label className="label-color">#</label>{t("navAbout")}
+          <label className="label-color">#</label>
+          {t("nav.navAbout")}
         </a>
         <a className="label-header">
-          <label className="label-color">#</label>{t("navContacts")}
+          <label className="label-color">#</label>
+          {t("nav.navContacts")}
         </a>
-        <select id="mySelect" onChange={handleChangeLanguage} className="select" name="language">
+        <select
+          id="mySelect"
+          onChange={handleChangeLanguage}
+          className="select"
+          name="language"
+        >
           <option value="EN">EN</option>
-          <option id="langPT" value="PT">
-            PT
-          </option>
+          <option value="PT">PT</option>
         </select>
       </div>
     </div>

@@ -1,7 +1,12 @@
 {
   "translation": {
-    "navWorks": "trabalhos",
-    "navAbout": "sobre mim",
-    "navContacts": "contatos"
+    "nav": {
+      "navHome": "principal",
+      "navWorks": "trabalhos",
+      "navAbout": "sobre mim",
+      "navContacts": "contatos"
+    },
+
+    "preQuote": "Quando o mundo te empurra, você só tem que se levantar e empurrar de volta."
   }
 }

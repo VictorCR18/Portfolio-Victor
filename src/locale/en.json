@@ -1,7 +1,13 @@
 {
   "translation": {
-    "navWorks": "works",
-    "navAbout": "about-me",
-    "navContacts": "contacts"
+    "nav":{
+      "navHome": "home",
+      "navWorks": "works",
+      "navAbout": "about-me",
+      "navContacts": "contacts"
+    },
+  
+
+    "preQuote": "When the world pushes you, you just have to get up and push back."
   }
 }

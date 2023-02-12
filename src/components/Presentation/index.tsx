@@ -5,7 +5,14 @@ import Logo from "../../assets/Logo.svg";
 import Dots from "../../assets/Dots.svg";
 import Aspas from "../../assets/Aspas.svg";
 
+import MyContext from "../Context/translateContext";
+import { useContext } from "react";
+
 export function Presentation() {
+
+  const { t }: any = useContext(MyContext);
+
+
   return (
     <div className="main-presentation">
       <div className="content">
@@ -32,7 +39,7 @@ export function Presentation() {
         <img className="Aspas1" src={Aspas} />
         <div className="quote">
           <p>
-            When the world pushes you, you just have to get up and push back.
+            {t("preQuote")}
           </p>
         </div>
         <img className="Aspas2" src={Aspas} />
