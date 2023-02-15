@@ -1,4 +1,5 @@
 import { AboutMe } from "../../components/AboutMe";
+import { Contacts } from "../../components/Contacts";
 import { Header } from "../../components/Header";
 import { Presentation } from "../../components/Presentation";
 import { Projects } from "../../components/Projects";
@@ -15,6 +16,7 @@ export function Home() {
         <Projects />
         <Skills />
         <AboutMe />
+        <Contacts />
       </div>
     </div>
   );
