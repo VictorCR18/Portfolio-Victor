@@ -13,7 +13,7 @@ export function Skills() {
     <div className="main-skills">
       <div className="titles-skills">
         <Titles symbol="#" title="skills" />
-        <img src={Line} />
+        <div className="bar-skills"/>
       </div>
       <div className="content-skills">
         <div className="box-pictures">

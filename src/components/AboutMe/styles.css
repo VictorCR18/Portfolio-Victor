@@ -1,0 +1,60 @@
+.main-aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.title-aboutme {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bar-aboutme {
+  width: 100%;
+  max-width: 326px;
+  height: 1px;
+  background: #c778dd;
+  flex-grow: 1;
+}
+
+.content-aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.text-aboutme {
+  width: 100%;
+  max-width: 515px;
+  line-height: 26px;
+}
+
+.button-aboutme {
+  width: 148px;
+  height: 37px;
+  border: 1px solid #c778dd;
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+.person {
+  position: absolute;
+  left: 677px;
+  top: -57px;
+  width: 339px;
+  height: 507px;
+}
+
+.dots-aboutme {
+  position: absolute;
+  left: 678px;
+  top: auto;
+}
+
+.dots2-aboutme {
+  position: absolute;
+  left: 892px;
+  top: 239px;
+}

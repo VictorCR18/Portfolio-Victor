@@ -1,3 +1,4 @@
+import { AboutMe } from "../../components/AboutMe";
 import { Header } from "../../components/Header";
 import { Presentation } from "../../components/Presentation";
 import { Projects } from "../../components/Projects";
@@ -13,6 +14,7 @@ export function Home() {
         <Presentation />
         <Projects />
         <Skills />
+        <AboutMe />
       </div>
     </div>
   );
