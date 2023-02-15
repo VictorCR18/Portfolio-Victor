@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
 }
 
 .text-aboutme {
@@ -39,9 +38,14 @@
   gap: 10px;
 }
 
+.picture-aboutme{
+    width: 100%;
+    position: relative;
+}
+
 .person {
   position: absolute;
-  left: 677px;
+  left: 171px;
   top: -57px;
   width: 339px;
   height: 507px;
@@ -49,12 +53,12 @@
 
 .dots-aboutme {
   position: absolute;
-  left: 678px;
+  left: 168px;
   top: auto;
 }
 
 .dots2-aboutme {
   position: absolute;
-  left: 892px;
+  left: 394px;
   top: 239px;
 }
