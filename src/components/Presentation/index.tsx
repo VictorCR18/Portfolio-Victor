@@ -18,8 +18,8 @@ export function Presentation() {
       <div className="content">
         <div className="text-box">
           <h2>
-            Victor is a <span>front-end developer</span> and{" "}
-            <span>aspiring fullstack</span>
+          {t("pre.h2pt1")}<span>{t("pre.spanpt1")}</span> {t("pre.h2pt2")}{" "}
+            <span>{t("pre.spanpt2")}</span>
           </h2>
           <label>
             He crafts responsive websites where technologies meet creativity
@@ -39,7 +39,7 @@ export function Presentation() {
         <img className="Aspas1" src={Aspas} />
         <div className="quote">
           <p>
-            {t("preQuote")}
+            {t("pre.preQuote")}
           </p>
         </div>
         <img className="Aspas2" src={Aspas} />

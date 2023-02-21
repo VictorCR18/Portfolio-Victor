@@ -1,13 +1,17 @@
 {
   "translation": {
-    "nav":{
+    "nav": {
       "navHome": "home",
       "navWorks": "works",
       "navAbout": "about-me",
       "navContacts": "contacts"
     },
-  
-
-    "preQuote": "When the world pushes you, you just have to get up and push back."
+    "pre": {
+      "h2pt1": "Victor is a ",
+      "spanpt1": "front-end developer",
+      "h2pt2": "and",
+      "spanpt2": "aspiring fullstack",
+      "preQuote": "When the world pushes you, you just have to get up and push back."
+    }
   }
 }
