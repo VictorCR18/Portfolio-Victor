@@ -16,7 +16,7 @@ export function Header() {
         </a>
       </div>
       <div className="navbar">
-        <a className="label-header">
+        <a href="/" className="label-header">
           <label className="label-color">#</label>{t('nav.navHome')}
         </a>
         <a className="label-header">

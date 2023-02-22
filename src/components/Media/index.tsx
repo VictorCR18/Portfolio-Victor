@@ -10,13 +10,13 @@ export function Media() {
       <div className="line"></div>
       <div className="media-icons">
         <a href="https://github.com/VictorCR18">
-          <img src={Github} />
+          <img className="icons" src={Github} />
         </a>
         <a href="https://www.linkedin.com/in/victor-cavalvante-421349198/">
-          <img src={Linkedin} />
+          <img className="icons" src={Linkedin} />
         </a>
         <a>
-          <img src={Discord} />
+          <img className="icons" src={Discord} />
         </a>
       </div>
     </div>

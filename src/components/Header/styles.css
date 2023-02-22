@@ -40,12 +40,26 @@
   width: auto;
 }
 
+.label-header:hover {
+  color: #ffffff;
+}
+
+.label-header:visited {
+  color: #ffffff;
+  font-style: oblique;
+  font-weight: 500;
+}
+
 .label-color {
   color: #c778dd;
 }
 
 .select {
   width: auto;
-  background-color: #2c3036;
+  background-color: #282c33;
   border: none;
+}
+
+.select:hover {
+  color: #ffffff;
 }

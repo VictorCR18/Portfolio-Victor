@@ -15,6 +15,10 @@
   padding: 0 10px;
 }
 
+.icons:hover{
+  color: #ffffff;
+}
+
 .line {
   width: 1px;
   height: 191px;
