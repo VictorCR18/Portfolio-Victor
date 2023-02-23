@@ -17,7 +17,7 @@ export function Footer() {
             </a>
             <label>cavalcantevictor2003@gmail.com</label>
           </div>
-          <label className="label-logo">front-end developer and aspiring full-stack</label>
+          <label className="label-logo">Front-end developer and aspiring full-stack</label>
         </div>
         <div className="media-footer">
           <label className="label-media">Media</label>

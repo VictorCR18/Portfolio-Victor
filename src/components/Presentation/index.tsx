@@ -13,7 +13,7 @@ export function Presentation() {
 
   return (
     <div className="main-presentation">
-      <div className="content">
+      <div className="content-presentation">
         <div className="text-box">
           <h2>
             {t("pre.h2pt1")}
@@ -24,9 +24,9 @@ export function Presentation() {
           <button>Contact me !!</button>
         </div>
         <div className="ilustration">
-          <img className="Logo" src={Logo} />
+          {/* <img className="Logo" src={Logo} /> */}
           <img className="Image" src={Image} />
-          <img className="Dots" src={Dots} />
+          {/* <img className="Dots" src={Dots} /> */}
           <label className="status">
             <span className="rectangle"></span>{t("pre.lstatus")}
           </label>

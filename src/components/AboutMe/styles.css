@@ -57,12 +57,14 @@
 
 .dots-aboutme {
   position: absolute;
+  width: 84px;
   left: 1px;
   top: auto;
 }
 
 .dots2-aboutme {
   position: absolute;
+  width: 104px;
   left: 222px;
   top: 239px;
 }

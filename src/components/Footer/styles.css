@@ -1,4 +1,5 @@
 .main-footer {
+  width: 100%;
   height: 208px;
 }
 
@@ -10,25 +11,37 @@
 }
 
 .content-footer {
-  display: flex;
+  width: 100%;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.label-logo {
+.label-logo,
+.link-logo {
   color: #ffffff;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.union {
+  max-width: 16px;
 }
 
 .infor-content-footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  word-break: break-all;
 }
 
 .logo-footer {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -36,6 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  word-break: break-word;
 }
 
 .label-media {

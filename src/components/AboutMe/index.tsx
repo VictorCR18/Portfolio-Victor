@@ -34,9 +34,9 @@ export function AboutMe() {
           <a className="button-aboutme">Read more -&gt;</a>
         </div>
         <div className="picture-aboutme">
-          <img className="person" src={Person} />
+          {/* <img className="person" src={Person} />
           <img className="dots-aboutme" src={Dots} />
-          <img className="dots2-aboutme" src={Dots2} />
+          <img className="dots2-aboutme" src={Dots2} /> */}
         </div>
       </div>
     </div>
