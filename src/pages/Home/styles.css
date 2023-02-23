@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 25px;
   /* background-color: #2c3036; */
 }
 
