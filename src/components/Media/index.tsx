@@ -7,7 +7,7 @@ import "./styles.css";
 export function Media() {
   return (
     <div className="media-link">
-      <div className="line"></div>
+      <div className="line-media"></div>
       <div className="media-icons">
         <a href="https://github.com/VictorCR18">
           <img className="icons" src={Github} />
