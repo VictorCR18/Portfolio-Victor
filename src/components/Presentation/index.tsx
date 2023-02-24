@@ -21,7 +21,7 @@ export function Presentation() {
             <span>{t("pre.spanpt2")}</span>
           </h2>
           <label>{t("pre.label")}</label>
-          <button>Contact me !!</button>
+          <button className="button-pre">Contact me !!</button>
         </div>
         <div className="ilustration">
           {/* <img className="Logo" src={Logo} /> */}

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .content-presentation {
@@ -70,7 +71,7 @@ button:focus {
 
 .Image {
   max-width: 457px;
-  width: 100%;
+  width: -webkit-fill-available;
   height: auto;
   position: relative;
 }
@@ -142,4 +143,51 @@ button:focus {
   position: absolute;
   right: 16.53px;
   top: 112px;
+}
+
+@media (max-width: 871px) {
+
+  .text-box{
+    width: 80%;
+  }
+  
+  .Image{
+    width: 100%;
+  }
+
+  h2, span{
+   font-size: 24px;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .content-presentation {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ilustration{
+    width: 100%;
+  }
+
+  .Image{
+    width: -webkit-fill-available;
+  }
+
+  .text-box{
+    width: 100%;
+  }
+
+  h2, span{
+    font-size: 32px;
+  }
+
+   label{
+    font-size: 16px;
+   }
+
+   .button-pre{
+    display: none;
+   }
 }
