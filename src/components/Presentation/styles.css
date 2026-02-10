@@ -89,14 +89,12 @@ button:focus {
   height: 16px;
   background: #c778dd;
   border: 1px solid #c778dd;
-  display: inline-block; /* Garante que o tamanho seja respeitado */
+  display: inline-block;
   margin-right: 10px;
 
-  /* Adiciona a animação */
   animation: pulse-online 2s infinite ease-in-out;
 }
 
-/* Define o comportamento da animação */
 @keyframes pulse-online {
   0% {
     opacity: 1;
@@ -106,7 +104,6 @@ button:focus {
   50% {
     opacity: 0.5;
     transform: scale(0.95);
-    /* Cria aquele efeito de brilho em volta */
     box-shadow: 0 0 8px 2px rgba(199, 120, 221, 0.5);
   }
   100% {

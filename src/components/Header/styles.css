@@ -27,7 +27,7 @@
   gap: 8px;
   font-size: 16px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 .union {
@@ -42,14 +42,13 @@
   align-items: center;
 }
 
-.label-header:hover {
-  color: #ffffffc2;
+.label-header {
+  font-size: 16px;
+  color: #fff;
 }
 
-.label-header:visited {
-  color: #ffffff;
-  font-style: oblique;
-  font-weight: 500;
+.label-header:hover {
+  color: #ffffffc2;
 }
 
 .label-color {
