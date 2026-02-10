@@ -6,13 +6,11 @@ import "./styles/global.css";
 import "./i18n/i18n.ts";
 
 import { TranslateContext } from "./utils/translateContext";
-import { Home } from "./pages/Home";
-import { Media } from "./components/Media";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-
-// Exemplo de uma nova página
-// import { ProjectDetails } from "./pages/ProjectDetails";
+import Home from "./pages/Home";
+import Project from "./pages/Projects";
+import { Media } from "./components/Geral/Media";
+import { Header } from "./components/Geral/Header";
+import { Footer } from "./components/Geral/Footer";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -23,10 +21,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 
         <Routes>
           <Route path="/" element={<Home />} />
-
-          {/* Exemplo de como adicionar novas rotas no futuro:
-          <Route path="/projeto/:id" element={<ProjectDetails />} /> 
-          */}
+          <Route path="/works" element={<Project />} />
         </Routes>
 
         <Footer />

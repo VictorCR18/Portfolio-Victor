@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { Card } from "../../types";
+import { Card } from "../../../types";
 
 export function Cards({ image, tools, nameProj, description, link }: Card) {
   return (

@@ -1,10 +1,10 @@
-import { Titles } from "../Titles";
+import { Titles } from "../../Geral/Titles";
 
 import "./styles.css";
 
-import Person from "../../assets/Person.png";
-import Dots from "../../assets/Dots.svg";
-import Dots2 from "../../assets/Dots2.svg";
+import Person from "../../../assets/Person.png";
+import Dots from "../../../assets/Dots.svg";
+import Dots2 from "../../../assets/Dots2.svg";
 
 export function AboutMe() {
   return (

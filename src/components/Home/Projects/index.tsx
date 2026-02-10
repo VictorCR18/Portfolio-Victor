@@ -1,10 +1,10 @@
-import Countdown from "../../assets/Countdown.png";
-import LoginForm from "../../assets/Login-Form-CSS.png";
+import Countdown from "../../../assets/Countdown.png";
+import LoginForm from "../../../assets/Login-Form-CSS.png";
 
 import "./styles.css";
 
-import { Cards } from "../Cards";
-import { Titles } from "../Titles";
+import { Cards } from "../../Geral/Cards";
+import { Titles } from "../../Geral/Titles";
 import { Link } from "react-router-dom";
 
 export function Projects() {

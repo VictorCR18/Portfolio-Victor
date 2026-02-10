@@ -1,11 +1,11 @@
 import "./styles.css";
 
-import Image from "../../assets/Image.png";
-import Logo from "../../assets/Logo.svg";
-import Dots from "../../assets/Dots.svg";
-import Aspas from "../../assets/Aspas.svg";
+import Image from "../../../assets/Image.png";
+import Logo from "../../../assets/Logo.svg";
+import Dots from "../../../assets/Dots.svg";
+import Aspas from "../../../assets/Aspas.svg";
 
-import MyContext from "../../utils/translateContext";
+import MyContext from "../../../utils/translateContext";
 import { useContext } from "react";
 
 export function Presentation() {

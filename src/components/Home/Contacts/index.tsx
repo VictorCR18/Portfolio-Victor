@@ -1,9 +1,9 @@
-import { Titles } from "../Titles";
+import { Titles } from "../../Geral/Titles";
 
 import "./styles.css";
 
-import Discord from "../../assets/Discord.svg";
-import Instagram from "../../assets/Instagram.svg";
+import Discord from "../../../assets/Discord.svg";
+import Instagram from "../../../assets/Instagram.svg";
 
 export function Contacts() {
   return (

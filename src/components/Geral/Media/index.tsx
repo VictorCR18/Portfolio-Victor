@@ -1,6 +1,6 @@
-import Discord from "../../assets/Discord.svg";
-import Linkedin from "../../assets/Linkedin.svg";
-import Github from "../../assets/Github.svg";
+import Discord from "../../../assets/Discord.svg";
+import Linkedin from "../../../assets/Linkedin.svg";
+import Github from "../../../assets/Github.svg";
 
 import "./styles.css";
 
@@ -12,7 +12,7 @@ export function Media() {
         <a href="https://github.com/VictorCR18">
           <img className="icons" src={Github} />
         </a>
-        <a href="https://www.linkedin.com/in/victor-cavalvante-421349198/">
+        <a href="https://www.linkedin.com/in/victor-cavalcante-421349198/">
           <img className="icons" src={Linkedin} />
         </a>
         <a>

@@ -1,12 +1,12 @@
 import "./styles.css";
-import Union from "../../assets/Union.svg";
+import Union from "../../../assets/Union.svg";
 
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 
-import MyContext from "../../utils/translateContext";
+import MyContext from "../../../utils/translateContext";
 
 export function Header() {
   const { t, handleChangeLanguage }: any = useContext(MyContext);

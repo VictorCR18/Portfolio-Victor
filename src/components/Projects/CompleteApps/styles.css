@@ -1,0 +1,9 @@
+.main-complete-apps {
+  /* margin-top: 100px; */
+}
+
+.title-complete-apps {
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}

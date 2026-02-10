@@ -6,6 +6,7 @@
   align-items: center;
   gap: 14px;
   z-index: 2;
+  top: 0;
 }
 
 .media-icons {
