@@ -5,7 +5,7 @@ import Logo from "../../assets/Logo.svg";
 import Dots from "../../assets/Dots.svg";
 import Aspas from "../../assets/Aspas.svg";
 
-import MyContext from "../Context/translateContext";
+import MyContext from "../../utils/translateContext";
 import { useContext } from "react";
 
 export function Presentation() {
@@ -28,7 +28,8 @@ export function Presentation() {
           <img className="Image" src={Image} />
           <img className="Dots" src={Dots} />
           <label className="status">
-            <span className="rectangle"></span>{t("pre.lstatus")}
+            <span className="rectangle"></span>
+            {t("pre.lstatus")}
           </label>
         </div>
       </div>

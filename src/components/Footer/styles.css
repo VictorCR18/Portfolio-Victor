@@ -1,30 +1,11 @@
 .main-footer {
-  width: 100%;
+  width: auto;
   height: 208px;
-}
-
-.line-footer {
-  width: 100%;
-  position: absolute;
-  border: 1px solid #abb2bf;
-  left: 0%;
-}
-
-.content-footer {
-  width: 100%;
-  height: 100%;
+  margin: 0px 246px;
+  border-top: 2px solid #abb2bf;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.label-logo,
-.link-logo {
-  color: #ffffff;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: 9px;
 }
 
 .union {
@@ -37,6 +18,11 @@
   flex-direction: column;
   gap: 16px;
   word-break: break-all;
+}
+
+.label-logo{
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .logo-footer {

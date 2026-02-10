@@ -1,6 +1,5 @@
 import "./styles.css";
 
-import Line from "../../assets/Line3.svg";
 import Dots from "../../assets/Dots.svg";
 import Rectangle from "../../assets/Rectangle.svg";
 import Logo from "../../assets/Logo.svg";
@@ -13,7 +12,7 @@ export function Skills() {
     <div className="main-skills">
       <div className="titles-skills">
         <Titles symbol="#" title="skills" />
-        <div className="bar-skills"/>
+        <div className="bar-skills" />
       </div>
       <div className="content-skills">
         <div className="box-pictures">
@@ -26,12 +25,21 @@ export function Skills() {
         <div className="skills-tools">
           <CardNote
             title="Languages"
-            description="JavaScript TypeScript Java C"
+            description="JavaScript TypeScript Java"
           />
-          <CardNote title="Databases" description="Mysql PostgreSQL" />
-          <CardNote title="Tools" description="VSCode Windows Git Github" />
-          <CardNote title="Other" description="HTML CSS SCSS NodeJS" />
-          <CardNote title="Frameworks/ library" description="Angular React" />
+          <CardNote title="Databases" description="Mysql PostgreSQL FireBase" />
+          <CardNote
+            title="Tools"
+            description="VSCode Hoppscotch Docker Git Github GitLab"
+          />
+          <CardNote
+            title="Other"
+            description="HTML CSS SCSS Axios NodeJS Express.js"
+          />
+          <CardNote
+            title="Frameworks/ library"
+            description="Angular React Vue Spring"
+          />
         </div>
       </div>
     </div>

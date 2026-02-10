@@ -1,55 +1,74 @@
 .main-card {
   display: flex;
   flex-direction: column;
-  max-width: 330.58px;
-  height: auto;
+  width: 330px;
   border: 1px solid #abb2bf;
-}
-
-.tools-card {
-  border: #abb2bf 1px solid;
-  padding: 8px;
+  background-color: transparent;
+  height: 100%; /* Importante para manter a altura igual entre cards */
 }
 
 .image-card {
-  max-width: 330.58px;
+  width: 100%;
   height: 201px;
+  border-bottom: 1px solid #abb2bf;
 }
 
 .image {
   width: 100%;
-  min-height: 201px;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.tools-card {
+  padding: 8px;
+  border-bottom: 1px solid #abb2bf;
+}
+
+.tools-card > span {
+  color: #abb2bf;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
 }
 
 .content-card {
-  padding: 16px 16px 24px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex-grow: 1;
 }
 
-h3 {
-  font-family: "Fira Code";
-  font-style: normal;
+.content-card h3 {
+  font-family: "Fira Code", monospace;
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
-
   color: #ffffff;
+  margin: 0;
+}
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+.content-card p {
+  color: #abb2bf;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  margin: 0;
+}
+
+.button-card {
+  margin-top: auto; /* Alinha o botão sempre no final */
 }
 
 .link-card {
+  display: inline-block;
   padding: 8px 16px;
-  border: solid #c778dd 1px;
+  border: 1px solid #c778dd;
+  font-family: "Fira Code", monospace;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.link-card:hover,
-.link-card:focus {
-  background-color: #c778dd;
+
+.link-card:hover {
+  background-color: rgba(199, 120, 221, 0.2);
 }

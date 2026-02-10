@@ -1,5 +1,4 @@
 .main-projects {
-  width: 100%;
   margin-bottom: 106px;
 }
 
@@ -29,6 +28,10 @@
   width: auto;
   line-height: 21px;
   color: #ffffff;
+}
+
+.link-projects:hover {
+  color: #ffffffc2;
 }
 
 .bar-projects {

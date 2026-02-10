@@ -1,19 +1,19 @@
 {
   "translation": {
     "nav": {
-      "navHome": "principal",
-      "navWorks": "trabalhos",
-      "navAbout": "sobre mim",
+      "navHome": "início",
+      "navWorks": "projetos",
+      "navAbout": "sobre-mim",
       "navContacts": "contatos"
     },
     "pre": {
       "h2pt1": "Victor é um ",
-      "spanpt1": "desenvolvedor front-end",
+      "spanpt1": "Desenvolvedor Fullstack ",
       "h2pt2": "e",
-      "spanpt2": "aspirante a fullstack",
-      "label":"Ele cria sites responsivos onde as tecnologias atendem à criatividade",
+      "spanpt2": "Programador Criativo",
+      "label": "Ele constrói aplicações web escaláveis onde performance encontra design.",
       "lstatus": "Graduando em Sistemas de Informação",
-      "preQuote": "Quando o mundo te empurra, você só tem que se levantar e empurrar de volta."
+      "preQuote": "Quando o mundo te empurra, você tem que se levantar e empurrar de volta."
     }
   }
 }

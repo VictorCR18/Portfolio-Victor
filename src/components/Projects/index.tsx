@@ -5,6 +5,7 @@ import "./styles.css";
 
 import { Cards } from "../Cards";
 import { Titles } from "../Titles";
+import { Link } from "react-router-dom";
 
 export function Projects() {
   return (
@@ -14,7 +15,7 @@ export function Projects() {
           <Titles symbol="#" title="projects" />
           <div className="bar-projects"></div>
         </label>
-        <a className="link-projects">View all ~~&gt;</a>
+        <Link to="/works" className="link-projects">View all ~~&gt;</Link>
       </div>
       <div className="Cards">
         <Cards
