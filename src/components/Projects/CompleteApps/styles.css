@@ -1,9 +1,22 @@
 .main-complete-apps {
-  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.content-complete-apps{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .title-complete-apps {
   flex-direction: column;
   display: flex;
   gap: 8px;
+}
+
+.list-complete-apps {
+  display: flex;
+  gap: 24px;
 }
