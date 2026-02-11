@@ -3,7 +3,7 @@ import LoginForm from "../../../assets/Login-Form-CSS.png";
 
 import "./styles.css";
 
-import { Cards } from "../../Geral/Cards";
+import { Card } from "../../Geral/Card";
 import { Titles } from "../../Geral/Titles";
 import { Link } from "react-router-dom";
 
@@ -18,14 +18,14 @@ export function Projects() {
         <Link to="/works" className="link-projects">View all ~~&gt;</Link>
       </div>
       <div className="Cards">
-        <Cards
+        <Card
           image={Countdown}
           tools="HTML CSS JavaScript"
           nameProj="Countdown"
           description="Regressive counter"
           link="http://countdown-victor.netlify.app"
         />
-        <Cards
+        <Card
           image={LoginForm}
           tools="HTML CSS"
           nameProj="Camp.in"

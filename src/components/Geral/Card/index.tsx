@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { Card } from "../../../types";
+import { CardProps } from "../../../types";
 
-export function Cards({ image, tools, nameProj, description, link }: Card) {
+export function Card({ image, tools, nameProj, description, link }: CardProps) {
   return (
     <article className="main-card">
       <div className="image-card">

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import Image from "../../../assets/Image.png";
+import Perfil from "../../../assets/Perfil.png";
 import Logo from "../../../assets/Logo.svg";
 import Dots from "../../../assets/Dots.svg";
 import Aspas from "../../../assets/Aspas.svg";
@@ -25,7 +25,7 @@ export function Presentation() {
         </div>
         <div className="ilustration">
           <img className="Logo" src={Logo} />
-          <img className="Image" src={Image} />
+          <img className="Image" src={Perfil} />
           <img className="Dots" src={Dots} />
           <label className="status">
             <span className="rectangle"></span>
