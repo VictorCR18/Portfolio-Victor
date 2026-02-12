@@ -1,7 +1,7 @@
 import { CardProps } from "../types";
 
 import IronFit from "./../assets/IronFit.png";
-import Carrinho from "./../assets/carrinho.png";
+import Carrinho from "./../assets/Carrinho.png";
 import Countdown from "./../assets/Countdown.png";
 import LoginForm from "./../assets/Login-Form-CSS.png";
 
