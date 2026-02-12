@@ -8,12 +8,12 @@ import "./styles.css";
 
 export default function Home() {
   return (
-      <div className="main-home">
-        <Presentation />
-        <Projects />
-        <Skills />
-        <AboutMe />
-        <Contacts />
-      </div>
+    <div className="main-home">
+      <Presentation />
+      <Projects symbol="#" display="inline" />
+      <Skills symbol="#" display="inline" />
+      <AboutMe symbol="#" display="inline" />
+      <Contacts symbol="#" display="inline" />
+    </div>
   );
 }

@@ -3,7 +3,6 @@
   flex-direction: column;
   max-height: 228px;
   height: 228px;
-  margin-bottom: 145px;
 }
 
 .title-contacts {
@@ -23,7 +22,8 @@
 .content-contacts {
   display: flex;
   height: 100%;
-  align-items: center;
+  padding-top: 24px;
+  align-items: self-start;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -43,8 +43,9 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .box {
@@ -73,4 +74,22 @@
 
 .instagram {
   padding: 4px;
+}
+
+.outher-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-outher-media {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.box-suport {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

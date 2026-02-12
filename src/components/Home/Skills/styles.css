@@ -1,6 +1,9 @@
 .main-skills {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 112px;
+  gap: 32px;
 }
 
 .titles-skills {
@@ -19,7 +22,6 @@
 
 .box-pictures {
   position: relative;
-  width: 50%;
 }
 
 .Dots1 {
@@ -74,6 +76,4 @@
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-  flex-wrap: wrap-reverse;
-  width: 50%;
 }

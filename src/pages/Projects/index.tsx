@@ -1,10 +1,12 @@
 import "./styles.css";
-import { CompleteApps } from "../../components/Projects/CompleteApps";
+import { SmallProjects } from "../../components/Projects/SmallProjects";
+import { Projects } from "../../components/Home/Projects";
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <div className="main-page-projects">
-      <CompleteApps />
+      <Projects symbol="/" display="none"/>
+      <SmallProjects />
     </div>
   );
 }

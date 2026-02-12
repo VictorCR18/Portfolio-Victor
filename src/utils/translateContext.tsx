@@ -1,9 +1,9 @@
-import React, { useState, createContext } from "react";
+import { useState, createContext, PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
 
 const MyContext = createContext({});
 
-export function TranslateContext(props: React.PropsWithChildren) {
+export function TranslateContext(props: PropsWithChildren) {
   const {
     t,
     i18n: { changeLanguage, language },

@@ -1,10 +1,10 @@
 .main-card {
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: 320px;
   border: 1px solid #abb2bf;
   background-color: transparent;
-  height: 100%; /* Importante para manter a altura igual entre cards */
+  height: 100%;
 }
 
 .image-card {
@@ -55,7 +55,7 @@
 }
 
 .button-card {
-  margin-top: auto; /* Alinha o botão sempre no final */
+  margin-top: auto;
 }
 
 .link-card {

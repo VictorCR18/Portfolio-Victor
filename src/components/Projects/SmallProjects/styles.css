@@ -1,0 +1,10 @@
+.title-small-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.list-small-projects {
+  display: flex;
+  gap: 24px;
+}

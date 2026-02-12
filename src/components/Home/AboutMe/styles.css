@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
-  margin-bottom: 112px;
 }
 
 .title-aboutme {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  align-items: self-start;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.title-aboutme > p {
+  color: #fff;
 }
 
 .bar-aboutme {

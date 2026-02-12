@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 100px; */
 }
 
 .content-presentation {
@@ -91,7 +90,6 @@ button:focus {
   border: 1px solid #c778dd;
   display: inline-block;
   margin-right: 10px;
-
   animation: pulse-online 2s infinite ease-in-out;
 }
 
@@ -114,9 +112,7 @@ button:focus {
 }
 
 .box-quote {
-  max-width: 712px;
-  height: auto;
-  margin: 112px 156px 137px;
+  margin: 112px 156px 30px;
   position: relative;
   display: flex;
   flex-direction: column;

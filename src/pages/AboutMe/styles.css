@@ -1,15 +1,8 @@
-.main-home {
+.about-me-main {
   position: relative;
   height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 100px 246px;
-  gap: 64px
-}
-
-@media (max-width: 510px) {
-  .main-home {
-    margin: 0 70px;
-  }
 }

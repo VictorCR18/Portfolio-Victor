@@ -5,3 +5,23 @@ export interface CardProps {
   description: string;
   link: string;
 }
+
+export interface SkillsProps {
+  symbol: string;
+  display: string;
+}
+
+export interface AboutMeProps {
+  symbol: string;
+  display: string;
+}
+
+export interface ContactProps {
+  symbol: string;
+  display: string;
+}
+
+export interface ProjectsProps {
+  symbol: string;
+  display: string;
+}
