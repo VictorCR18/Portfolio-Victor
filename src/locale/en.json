@@ -1,6 +1,6 @@
 {
   "translation": {
-    "nav": {
+    "header": {
       "navHome": "home",
       "navWorks": "works",
       "navAbout": "about-me",
@@ -14,6 +14,12 @@
       "label": "He builds scalable web applications where performance meets design.",
       "lstatus": "Majoring in Information Systems",
       "preQuote": "When the world pushes you, you just have to get up and push back."
+    },
+    "projects": {
+      "title": "projects",
+      "viewAll": "View all ",
+      "listDesc": "List of my projects",
+      "completeApps": "complete apps"
     }
   }
 }

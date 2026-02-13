@@ -1,5 +1,8 @@
 import "./styles.css";
 
+import { useContext } from "react";
+import MyContext from "../../../utils/translateContext";
+
 import { Card } from "../../Geral/Card";
 import { Titles } from "../../Geral/Titles";
 import { Link } from "react-router-dom";
@@ -7,12 +10,14 @@ import { ProjectsProps } from "../../../types";
 import { CompleteApps } from "../../../compose";
 
 export function Projects({ symbol, display }: ProjectsProps) {
+  const { t }: any = useContext(MyContext);
+
   return (
     <div className="main-projects">
       <div className="title-projects">
         <div className="content-title-projects">
           <div className="title-projects-label">
-            <Titles symbol={symbol} title="projects" />
+            <Titles symbol={symbol} title={t("projects.title")} />
             <div className="bar-projects" style={{ display: display }} />
           </div>
 
@@ -21,15 +26,15 @@ export function Projects({ symbol, display }: ProjectsProps) {
             className="link-projects"
             style={{ display: display }}
           >
-            View all ~~&gt;
+            {t("projects.viewAll")}~~&gt;
           </Link>
         </div>
 
         <span style={{ display: display === "inline" ? "none" : "block" }}>
           {display !== "inline" && (
             <>
-              <p>List of my projects</p>
-              <Titles symbol="#" title="complete apps" />
+              <p>{t("projects.listDesc")}</p>
+              <Titles symbol="#" title={t("projects.completeApps")} />
             </>
           )}
         </span>

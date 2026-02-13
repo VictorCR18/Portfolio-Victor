@@ -40,28 +40,28 @@ export function Header() {
               <Dialog.Close asChild>
                 <Link to="/" className="label-header">
                   <span className="label-color">#</span>
-                  {t("nav.navHome")}
+                  {t("header.navHome")}
                 </Link>
               </Dialog.Close>
 
               <Dialog.Close asChild>
                 <Link to="/works" className="label-header">
                   <span className="label-color">#</span>
-                  {t("nav.navWorks")}
+                  {t("header.navWorks")}
                 </Link>
               </Dialog.Close>
 
               <Dialog.Close asChild>
                 <Link to="/about" className="label-header">
                   <span className="label-color">#</span>
-                  {t("nav.navAbout")}
+                  {t("header.navAbout")}
                 </Link>
               </Dialog.Close>
 
               <Dialog.Close asChild>
                 <Link to="/contacts" className="label-header">
                   <span className="label-color">#</span>
-                  {t("nav.navContacts")}
+                  {t("header.navContacts")}
                 </Link>
               </Dialog.Close>
 
@@ -100,19 +100,19 @@ export function Header() {
       <div className="navbar">
         <Link to="/" className="label-header">
           <span className="label-color">#</span>
-          {t("nav.navHome")}
+          {t("header.navHome")}
         </Link>
         <Link to="/works" className="label-header">
           <span className="label-color">#</span>
-          {t("nav.navWorks")}
+          {t("header.navWorks")}
         </Link>
         <Link to="/about" className="label-header">
           <span className="label-color">#</span>
-          {t("nav.navAbout")}
+          {t("header.navAbout")}
         </Link>
         <Link to="/contacts" className="label-header">
           <span className="label-color">#</span>
-          {t("nav.navContacts")}
+          {t("header.navContacts")}
         </Link>
 
         <select

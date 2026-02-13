@@ -1,6 +1,6 @@
 {
   "translation": {
-    "nav": {
+    "header": {
       "navHome": "início",
       "navWorks": "projetos",
       "navAbout": "sobre-mim",
@@ -14,6 +14,12 @@
       "label": "Ele constrói aplicações web escaláveis onde performance encontra design.",
       "lstatus": "Graduando em Sistemas de Informação",
       "preQuote": "Quando o mundo te empurra, você tem que se levantar e empurrar de volta."
+    },
+    "projects": {
+      "title": "projetos",
+      "viewAll": "Ver tudo ",
+      "listDesc": "Lista dos meus projetos",
+      "completeApps": "apps completos"
     }
   }
 }
