@@ -1,96 +1,232 @@
 .main-presentation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .content-presentation {
-  position: relative;
-  gap: 28px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  margin-top: 60px;
 }
 
 .text-box {
-  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
+  max-width: 500px;
 }
 
 h2 {
   color: #ffffff;
   font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 span {
   color: #c778dd;
-  font-size: 32px;
 }
 
-button {
+.subtitle {
+  color: #abb2bf;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button.button-pre {
   width: 148px;
   height: 37px;
-  background-color: #2c3036;
-  border: solid #c778dd 1px;
+  background-color: transparent;
+  border: 1px solid #c778dd;
   font-weight: 500;
   color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-button:hover,
-button:focus {
-  background-color: #c778dd;
+
+button.button-pre:hover {
+  background-color: rgba(199, 120, 221, 0.1);
 }
 
 .ilustration {
-  height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.Logo {
-  position: absolute;
-  max-width: 155px;
-  width: auto;
-  left: -9px;
-  top: 77px;
-}
-
-.Image {
-  width: 457px;
+.Image-perfil {
+  width: 100%;
   height: auto;
+  z-index: 1;
   position: relative;
 }
 
-.Dots {
+.Logo-deco {
   position: absolute;
-  max-width: 84px;
-  width: 100%;
-  left: 403px;
-  top: 238px;
+  top: 20%;
+  left: -5%;
+  width: 35%;
+  z-index: 0;
+}
+
+.Dots-deco {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: 19%;
+  z-index: 2;
 }
 
 .status {
-  width: 85%;
+  width: 80%;
+  max-width: 400px;
   display: flex;
   align-items: center;
   border: 1px solid #abb2bf;
+  background-color: #282c33;
   padding: 8px;
+  z-index: 3;
+  font-size: 16px;
+  color: #abb2bf;
 }
 
 .rectangle {
   width: 16px;
   height: 16px;
   background: #c778dd;
-  border: 1px solid #c778dd;
   display: inline-block;
   margin-right: 10px;
   animation: pulse-online 2s infinite ease-in-out;
+}
+
+.box-quote {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  max-width: 700px;
+}
+
+.quote-content {
+  border: 1px solid #abb2bf;
+  padding: 32px;
+  background-color: #282c33;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.author-content {
+  width: 40%;
+  border: 1px solid #abb2bf;
+  border-top: none;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 24px;
+}
+
+.Aspas-top {
+  position: absolute;
+  top: -17px;
+  left: 10px;
+  width: 51px;
+  background-color: #282c33;
+  padding: 0 5px;
+}
+
+.Aspas-bottom {
+  position: absolute;
+  bottom: 54px;
+  right: 10px;
+  width: 51px;
+
+  background-color: #282c33;
+  padding: 0 5px;
+}
+
+@media (max-width: 1024) {
+  .main-presentation {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 871px) {
+  .content-presentation {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .text-box {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .ilustration {
+    width: 100%;
+  }
+
+  .Logo-deco {
+    left: 0;
+  }
+
+  .author-content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 630px) {
+  .main-presentation {
+    padding: 0 16px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  /* Ajustes na citação para não quebrar no mobile */
+  .quote-content,
+  .author-content {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .box-quote {
+    margin-top: 60px;
+  }
 }
 
 @keyframes pulse-online {
@@ -108,92 +244,5 @@ button:focus {
     opacity: 1;
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(199, 120, 221, 0);
-  }
-}
-
-.box-quote {
-  margin: 112px 156px 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 31px;
-}
-
-.quote {
-  border: 1px solid #abb2bf;
-  padding: 32px;
-}
-
-.author {
-  width: auto;
-  padding: 16px;
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid #abb2bf;
-  border-top: 0;
-}
-
-.Aspas1 {
-  width: auto;
-  position: absolute;
-  left: 11px;
-  top: -14px;
-}
-
-.Aspas2 {
-  width: auto;
-  position: absolute;
-  right: 16.53px;
-  top: 112px;
-}
-
-@media (max-width: 871px) {
-  .text-box {
-    width: 80%;
-  }
-
-  .Image {
-    width: 100%;
-  }
-
-  h2,
-  span {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 630px) {
-  .content-presentation {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .ilustration {
-    width: 100%;
-  }
-
-  .Image {
-    width: -webkit-fill-available;
-  }
-
-  .text-box {
-    width: 100%;
-  }
-
-  h2,
-  span {
-    font-size: 32px;
-  }
-
-  label {
-    font-size: 16px;
-  }
-
-  .button-pre {
-    display: none;
   }
 }

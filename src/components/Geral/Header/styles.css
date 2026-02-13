@@ -1,7 +1,7 @@
 .main-header {
   width: 100%;
   height: 86px;
-  padding: 0px 246px;
+  padding: 0 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,15 +9,14 @@
   position: fixed;
   top: 0;
   background-color: #282c33;
-  z-index: 1;
+  z-index: 999;
+  box-sizing: border-box;
 }
 
 .logo {
-  /* width: 100%; */
   height: auto;
-  /* display: flex; */
-  justify-content: start;
   font-weight: 700;
+  display: flex;
   align-items: center;
 }
 
@@ -28,6 +27,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #fff;
+  text-decoration: none;
 }
 
 .union {
@@ -38,40 +38,54 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  gap: 64px;
+  gap: 40px;
   align-items: center;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
 }
 
 .label-header {
   font-size: 16px;
-  color: #fff;
+  color: #abb2bf;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .label-header:hover {
-  color: #ffffffc2;
+  color: #fff;
 }
 
 .label-color {
-  font-size: 16px;
   color: #c778dd;
 }
 
 .select {
-  width: auto;
-  background-color: #282c33;
+  background-color: transparent;
   border: none;
+  color: #abb2bf;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .select:hover {
   color: #ffffff;
 }
 
-#checkbox {
-  display: none;
+@media (min-width: 1024px) {
+  .main-header {
+    padding: 0 18%;
+    max-width: 100%;
+  }
 }
 
-.open-modal {
-  display: none;
+@media (max-width: 1024px) {
+  .main-header {
+    padding: 0 14%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 940px) {
@@ -79,136 +93,109 @@
     display: none;
   }
 
+  .main-header {
+    padding: 0 16px;
+    max-width: 100%;
+  }
+
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
   .navbar-modal {
     display: flex;
     flex-direction: column;
     gap: 32px;
     font-size: 32px;
+    margin-top: 40px;
   }
 
-  .select,
-  option {
+  .navbar-modal .label-header {
     font-size: 32px;
-    font-weight: 500;
   }
 
-  #checkbox {
-    display: none;
-  }
-
-  .hamburguer {
-    flex: 0.5;
-    width: 80%;
-    height: inherit;
-    position: relative;
-    padding: 8px;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    cursor: pointer;
-  }
-
-  .line {
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    background-color: #ffffffff;
-    border-radius: 3px;
-    transition:
-      transform 0.25s,
-      opacity 0.35s;
-  }
-
-  .line--top {
-    transform: translateY(-7px);
-  }
-
-  .line--middle {
-    width: 15px;
+  .navbar-modal .select {
+    font-size: 32px;
   }
 
   .DialogOverlay {
-    background-color: var(--blackA9);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     inset: 0;
+    z-index: 9998;
     animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .DialogContent {
-    background-color: #282c33;
-    border-radius: 6px;
-    box-shadow:
-      hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-      hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    padding: 25px 50px;
+    height: 100%;
+    background-color: #282c33;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 24px;
+    z-index: 9999;
     animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .DialogContent:focus {
-    outline: none;
-  }
-
-  .DialogTitle {
-    margin: 10px 0px 5%;
-    font-weight: 500;
-    color: var(--mauve12);
-    font-size: 17px;
-  }
-
-  .DialogDescription {
-    margin: 10px 0 20px;
-    color: var(--mauve11);
-    font-size: 15px;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
   }
 
   .IconButton {
     font-family: inherit;
     border-radius: 100%;
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--violet11);
+    color: #fff;
     position: absolute;
-    top: 32px;
-    right: 55px;
-  }
-  .IconButton:hover {
-    background-color: var(--violet4);
-  }
-  .IconButton:focus {
-    box-shadow: 0 0 0 2px var(--violet7);
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
 
-  @keyframes overlayShow {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes contentShow {
-    from {
-      opacity: 0;
-      transform: translate(-50%, -48%) scale(0.96);
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
+  .IconButton svg {
+    width: 24px;
+    height: 24px;
   }
 }
-/* 
-  @media (max-width: 510px) {
-    
-  } */
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

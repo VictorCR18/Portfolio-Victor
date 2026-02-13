@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </TranslateContext>
   </React.StrictMode>,
