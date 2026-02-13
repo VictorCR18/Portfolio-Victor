@@ -1,5 +1,4 @@
 import { Titles } from "../../Geral/Titles";
-
 import "./styles.css";
 
 import Discord from "../../../assets/Discord.svg";
@@ -16,51 +15,51 @@ export function Contacts({ symbol, display }: ContactProps) {
         <Titles symbol={symbol} title="contacts" />
         <div className="bar-contacts" style={{ display: display }} />
       </div>
+
       <div className="content-contacts">
         <div className="text-contacts">
-          <label>
+          <p>
             I’m interested in full-time opportunities and freelance projects.
             However, if you have any other request or question, don't hesitate
             to contact me.
-          </label>
+          </p>
         </div>
+
         <div className="box-contacts">
           <div className="box">
-            <label className="box-title">Suport me here</label>
-            <div className="box-suport">
-              <img className="whatsapp" src={Whatsapp} />
-              <label className="box-label">+5585999458074</label>
-            </div>
-          </div>
-          <div className="box">
-            <label className="box-title">Message me here</label>
+            <span className="box-title">Message me here</span>
             <div className="box-rede">
-              <label className="box-label">
-                <img src={Discord} />
-                VictorCR77#7738
-              </label>
-              <label className="box-label">
-                <img className="linkedin" src={LinkedIn} />
-                Victor Cavalcante
-              </label>
+              <div className="box-label">
+                <img src={Discord} alt="Discord" />
+                <span>VictorCR77#7738</span>
+              </div>
+              <div className="box-label">
+                <img className="linkedin" src={LinkedIn} alt="LinkedIn" />
+                <span>Victor Cavalcante</span>
+              </div>
+              <div className="box-label">
+                <img className="whatsapp" src={Whatsapp} alt="Whatsapp" />
+                <span>+5585999458074</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <div
         className="outher-media"
-        style={{ display: display === "inline" ? "none" : "block" }}
+        style={{ display: display === "inline" ? "none" : "flex" }}
       >
         <Titles symbol="#" title="other media" />
         <div className="list-outher-media">
-          <label className="box-label">
-            <img className="email" src={Email} />
-            cavalcantevictor2003@gmail.com
-          </label>{" "}
-          <label className="box-label">
-            <img className="instagram" src={Instagram} />
-            _veto0
-          </label>{" "}
+          <div className="box-label">
+            <img className="email" src={Email} alt="Email" />
+            <span>cavalcantevictor2003@gmail.com</span>
+          </div>
+          <div className="box-label">
+            <img className="instagram" src={Instagram} alt="Instagram" />
+            <span>_veto0</span>
+          </div>
         </div>
       </div>
     </div>

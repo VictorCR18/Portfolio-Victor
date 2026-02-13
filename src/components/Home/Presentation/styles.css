@@ -33,7 +33,7 @@ h2 {
   line-height: 1.2;
 }
 
-span {
+h2 > span {
   color: #c778dd;
 }
 
@@ -217,7 +217,6 @@ button.button-pre:hover {
     font-size: 26px;
   }
 
-  /* Ajustes na citação para não quebrar no mobile */
   .quote-content,
   .author-content {
     font-size: 18px;

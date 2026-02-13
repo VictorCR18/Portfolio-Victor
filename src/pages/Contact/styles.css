@@ -4,5 +4,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 100px 246px;
+  width: 100%;
+  max-width: 1024px; 
+  margin: 100px auto 50px;
+  padding: 0 24px;
+  box-sizing: border-box;
 }

@@ -39,4 +39,25 @@ const SimpleApps: CardProps[] = [
   },
 ];
 
-export { CompleteApps, SimpleApps };
+const educationData = [
+  {
+    role: "Computer Technician", // Técnico em Informática
+    date: "2019 - 2021",
+    institution: "EEEP Flávio Gomes Granjeiro",
+    status: "completed",
+    description:
+      "Development of Desktop Software, Web Full-Stack foundations & Database basics.",
+    techs: ["Logic", "Database", "Desktop"],
+  },
+  {
+    role: "Information Systems", // Bacharelado em SI
+    date: "2022 - Present",
+    institution: "Universidade Federal do Ceará",
+    status: "loading",
+    description:
+      "Focusing on Software Architecture, Data Persistence, and Validation algorithms.",
+    techs: ["Algorithms", "Architecture", "Validation"],
+  },
+];
+
+export { CompleteApps, SimpleApps, educationData };

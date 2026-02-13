@@ -14,43 +14,56 @@ export function Header() {
   const Modal = () => (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <label htmlFor="checkbox" className="hamburguer">
-          <span className="line line--top"></span>
-          <span className="line line--middle"></span>
-        </label>
+        <div className="hamburguer" aria-label="Abrir menu">
+          <span className="line"></span>
+          <span className="line"></span>
+          <span className="line"></span>
+        </div>
       </Dialog.Trigger>
+
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay" />
         <Dialog.Content className="DialogContent">
           <Dialog.Title className="DialogTitle">
             <div className="logo">
-              <Link id="logo-mobile" to="/" className="link-logo">
-                <img className="union" src={Union} alt="Union Logo" /> Victor
-                Dev
-              </Link>
+              <Dialog.Close asChild>
+                <Link id="logo-mobile" to="/" className="link-logo">
+                  <img className="union" src={Union} alt="Union Logo" /> Victor
+                  Dev
+                </Link>
+              </Dialog.Close>
             </div>
           </Dialog.Title>
+
           <Dialog.Description className="DialogDescription" asChild>
             <div className="navbar-modal">
-              <Link to="/" className="label-header">
-                <span className="label-color">#</span>
-                {t("nav.navHome")}
-              </Link>
+              <Dialog.Close asChild>
+                <Link to="/" className="label-header">
+                  <span className="label-color">#</span>
+                  {t("nav.navHome")}
+                </Link>
+              </Dialog.Close>
 
-              <Link to="/works" className="label-header">
-                <span className="label-color">#</span>
-                {t("nav.navWorks")}
-              </Link>
+              <Dialog.Close asChild>
+                <Link to="/works" className="label-header">
+                  <span className="label-color">#</span>
+                  {t("nav.navWorks")}
+                </Link>
+              </Dialog.Close>
 
-              <Link to="/about" className="label-header">
-                <span className="label-color">#</span>
-                {t("nav.navAbout")}
-              </Link>
+              <Dialog.Close asChild>
+                <Link to="/about" className="label-header">
+                  <span className="label-color">#</span>
+                  {t("nav.navAbout")}
+                </Link>
+              </Dialog.Close>
 
-              <Link to="/contacts" className="label-header">
-                <span className="label-color">#</span>
-                {t("nav.navContacts")}
-              </Link>
+              <Dialog.Close asChild>
+                <Link to="/contacts" className="label-header">
+                  <span className="label-color">#</span>
+                  {t("nav.navContacts")}
+                </Link>
+              </Dialog.Close>
 
               <select
                 id="mySelectMobile"
@@ -63,6 +76,7 @@ export function Header() {
               </select>
             </div>
           </Dialog.Description>
+
           <Dialog.Close asChild>
             <button className="IconButton" aria-label="Close">
               <Cross2Icon />

@@ -4,6 +4,7 @@
   position: relative;
   margin-bottom: 112px;
   gap: 32px;
+  width: 100%;
 }
 
 .titles-skills {
@@ -17,15 +18,24 @@
   max-width: 229px;
   height: 1px;
   background: #c778dd;
-  flex-grow: 1;
+}
+
+.content-skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .box-pictures {
   position: relative;
+  width: 350px;
+  height: 300px;
+  flex-shrink: 0;
 }
 
 .Dots1 {
-  gap: 16px;
   width: 63px;
   height: 63px;
   left: 36px;
@@ -34,7 +44,6 @@
 }
 
 .Dots2 {
-  gap: 16px;
   width: 63px;
   height: 63px;
   left: 205px;
@@ -66,14 +75,32 @@
   position: absolute;
 }
 
-.content-skills {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .skills-tools {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 16px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .content-skills {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .skills-tools {
+    justify-content: center;
+    width: 100% !important;
+  }
+  .box-pictures {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-skills {
+    margin-bottom: 60px;
+  }
 }

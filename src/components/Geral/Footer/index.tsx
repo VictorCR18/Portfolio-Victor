@@ -9,37 +9,44 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="main-footer">
+    <footer className="main-footer">
       <div className="container-footer">
         <div className="infor-content-footer">
           <div className="logo-footer">
             <a href="/" className="link-logo">
-              <img className="union" src={Union} /> Victor Dev
+              <img className="union" src={Union} alt="Logo" /> Victor Dev
             </a>
-            <label>cavalcantevictor2003@gmail.com</label>
+            <span className="email-footer">cavalcantevictor2003@gmail.com</span>
           </div>
-          <label className="label-logo">
-            Fullstack developer
-          </label>
+          <p className="description-footer">Fullstack developer</p>
         </div>
         <div className="media-footer">
-          <label className="label-media">Media</label>
+          <span className="label-media">Media</span>
           <div className="icons-media">
-            <a href="https://github.com/VictorCR18">
-              <img src={Github} />
+            <a
+              href="https://github.com/VictorCR18"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Github} alt="Github" />
             </a>
-            <a href="https://www.linkedin.com/in/victor-cavalcante-421349198/">
-              <img src={Linkedin} />
+            <a
+              href="https://www.linkedin.com/in/victor-cavalcante-421349198/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Linkedin} alt="Linkedin" />
             </a>
-            <a>
-              <img src={Discord} />
+            <a href="#" aria-label="Discord">
+              <img src={Discord} alt="Discord" />
             </a>
           </div>
         </div>
       </div>
+
       <div className="copy-footer">
-        Copyright © {currentYear} Victor Dev. All rights reserved.{" "}
+        Copyright © {currentYear} Victor Dev. All rights reserved.
       </div>
-    </div>
+    </footer>
   );
 }

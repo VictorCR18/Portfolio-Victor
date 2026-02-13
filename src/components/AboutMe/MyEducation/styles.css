@@ -1,0 +1,155 @@
+.my-education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title-education {
+  margin-bottom: 16px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.education-card {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.education-card:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #abb2bf;
+  background-color: #282c33;
+  z-index: 2;
+}
+
+.dot.completed {
+  background-color: #abb2bf;
+  border-color: #abb2bf;
+}
+
+.dot.loading {
+  background-color: #c778dd;
+  border-color: #c778dd;
+  box-shadow: 0 0 10px rgba(199, 120, 221, 0.6);
+  animation: pulse-purple 2s infinite;
+}
+
+.line-education {
+  width: 1px;
+  background-color: #abb2bf;
+  flex-grow: 1;
+  margin-top: 4px;
+}
+
+.card-content {
+  border: 1px solid #abb2bf;
+  padding: 24px;
+  width: 100%;
+  background-color: transparent;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card-content:hover {
+  border-color: #c778dd;
+  transform: translateX(5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.role-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.date-badge {
+  font-family: "Fira Code", monospace;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.institution {
+  color: #c778dd;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.description {
+  color: #abb2bf;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: #abb2bf;
+  font-size: 14px;
+}
+
+@keyframes pulse-purple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(199, 120, 221, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(199, 120, 221, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(199, 120, 221, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .education-card {
+    gap: 16px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .role-title {
+    font-size: 18px;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+}

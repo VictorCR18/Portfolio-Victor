@@ -1,63 +1,126 @@
 .main-footer {
   width: 100%;
-  height: 208px;
-  border-top: 2px solid #abb2bf;
+  height: auto;
+  border-top: 1px solid #abb2bf;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  background-color: #282c33;
+  margin-top: 50px;
 }
 
 .container-footer {
   width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px 24px; 
+
   display: flex;
   justify-content: space-between;
-  padding: 32px 246px;
-}
-
-.union {
-  max-width: 16px;
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 24px;
 }
 
 .infor-content-footer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  word-break: break-all;
-}
-
-.label-logo {
-  font-weight: 400;
-  color: #ffffff;
 }
 
 .logo-footer {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
+}
+
+.link-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.union {
+  width: 16px;
+  height: 16px;
+}
+
+.email-footer {
+  color: #abb2bf;
+  font-size: 16px;
+}
+
+.description-footer {
+  color: #ffffff;
 }
 
 .media-footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  word-break: break-word;
 }
 
 .label-media {
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
   color: #ffffff;
 }
 
 .icons-media {
   display: flex;
-  gap: 8px;
+  gap: 16px;
+}
+
+.icons-media img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icons-media img:hover {
+  transform: translateY(-3px);
 }
 
 .copy-footer {
   font-size: 14px;
-  padding: 8px 0px;
+  padding: 24px 0;
+  color: #abb2bf;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .logo-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-footer {
+    padding: 32px 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer {
+    align-items: center;
+  }
+
+  .infor-content-footer {
+    align-items: center;
+  }
+
+  .media-footer {
+    align-items: center;
+  }
 }

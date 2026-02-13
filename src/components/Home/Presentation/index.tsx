@@ -25,7 +25,6 @@ export function Presentation() {
         </div>
 
         <div className="ilustration">
-          {/* Container relativo para prender os elementos flutuantes à imagem */}
           <div className="image-container">
             <img className="Logo-deco" src={Logo} alt="" />
             <img className="Image-perfil" src={Perfil} alt="Perfil" />
@@ -39,7 +38,7 @@ export function Presentation() {
         </div>
       </div>
 
-      <div className="box-quote">
+      {/* <div className="box-quote">
         <div className="quote-container">
           <img className="Aspas-top" src={Aspas} alt="Aspas" />
           <div className="quote-content">
@@ -50,7 +49,7 @@ export function Presentation() {
           </div>
           <img className="Aspas-bottom" src={Aspas} alt="Aspas" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

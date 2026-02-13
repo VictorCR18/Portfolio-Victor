@@ -1,12 +1,13 @@
 .main-contacts {
   display: flex;
   flex-direction: column;
-  max-height: 228px;
-  height: 228px;
+  height: auto;
+  width: 100%;
+  gap: 24px;
 }
 
 .title-contacts {
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,36 +15,31 @@
 }
 
 .bar-contacts {
-  width: 127px;
+  width: 100%;
+  max-width: 127px;
   height: 1px;
   background: #c778dd;
 }
 
 .content-contacts {
   display: flex;
-  height: 100%;
-  padding-top: 24px;
-  align-items: self-start;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
 }
 
 .text-contacts {
-  width: 100%;
+  flex: 1;
   max-width: 505px;
-  line-height: 21px;
-}
-
-.box-title {
-  color: #ffffff;
-  font-weight: 600;
+  line-height: 26px;
+  color: #abb2bf;
 }
 
 .box-contacts {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: flex-start;
   gap: 16px;
 }
@@ -55,41 +51,71 @@
   padding: 16px;
   gap: 16px;
   border: 1px solid #abb2bf;
+  min-width: 150px;
 }
 
+.box-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.box-suport,
 .box-rede {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0px;
-  gap: 8px;
+  gap: 12px;
 }
 
 .box-label {
   display: flex;
   align-items: center;
-  gap: 5px;
-}
-
-.instagram {
-  padding: 4px;
+  gap: 8px;
+  color: #abb2bf;
+  font-size: 14px;
 }
 
 .outher-media {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 32px;
 }
 
 .list-outher-media {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.box-suport {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+@media (max-width: 900px) {
+  .content-contacts {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .text-contacts {
+    max-width: 100%;
+  }
+
+  .box-contacts {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .box {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .box-contacts {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
 }

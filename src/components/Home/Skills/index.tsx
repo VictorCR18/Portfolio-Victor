@@ -9,40 +9,45 @@ import { CardNote } from "../../Geral/CardNote";
 import { SkillsProps } from "../../../types";
 
 export function Skills({ symbol, display }: SkillsProps) {
+  const showDecoration = display === "inline";
+
   return (
     <div className="main-skills">
       <div className="titles-skills">
         <Titles symbol={symbol} title="skills" />
-        <div className="bar-skills" style={{ display: display }} />
+        <div className="bar-skills" style={{ display: showDecoration ? "block" : "none" }} />
       </div>
+
       <div className="content-skills">
-        <div className="box-pictures" style={{ display: display }}>
-          <img className="Dots1" src={Dots} />
-          <img className="Dots2" src={Dots} />
-          <img className="Rectangle1" src={Rectangle} />
-          <img className="Rectangle2" src={Rectangle} />
-          <img className="Logo2" src={Logo} />
-        </div>
+        {showDecoration && (
+          <div className="box-pictures">
+            <img className="Dots1" src={Dots} alt="" />
+            <img className="Dots2" src={Dots} alt="" />
+            <img className="Rectangle1" src={Rectangle} alt="" />
+            <img className="Rectangle2" src={Rectangle} alt="" />
+            <img className="Logo2" src={Logo} alt="" />
+          </div>
+        )}
+
         <div
           className="skills-tools"
           style={{
-            flexWrap: display === "inline" ? "wrap" : "nowrap",
-            width: display === "inline" ? "40vw" : "100%",
+            justifyContent: display === "inline" ? "flex-end" : "flex-start",
           }}
         >
-          <CardNote title="Other" description="HTML CSS SCSS Axios NodeJS" />
           <CardNote
-            title="Frameworks/ library"
-            description="Angular React Vue Spring Express.js"
+            title="Languages"
+            description="JavaScript TypeScript Java"
           />
           <CardNote title="Databases" description="Mysql PostgreSQL FireBase" />
           <CardNote
             title="Tools"
             description="VSCode Hoppscotch Docker Git Github GitLab"
           />
+          <CardNote title="Other" description="HTML CSS SCSS Axios NodeJS" />
           <CardNote
-            title="Languages"
-            description="JavaScript TypeScript Java"
+            title="Frameworks"
+            description="Angular React Vue Spring Express.js"
           />
         </div>
       </div>

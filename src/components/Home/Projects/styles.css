@@ -1,5 +1,6 @@
 .main-projects {
   margin-bottom: 58px;
+  width: 100%;
 }
 
 .title-projects {
@@ -9,24 +10,21 @@
   gap: 8px;
 }
 
-span > p {
-  font-size: 16px;
-  margin-bottom: 36px;
-}
-
 .content-title-projects {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .title-projects-label {
   display: flex;
-  width: 100%;
+  flex: 1;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .title-hastag {
@@ -34,28 +32,56 @@ span > p {
   height: 42px;
 }
 
+.bar-projects {
+  flex: 1;
+  max-width: 511px;
+  height: 1px;
+  background: #c778dd;
+}
+
 .link-projects {
   white-space: nowrap;
   width: auto;
   line-height: 21px;
   color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .link-projects:hover {
   color: #ffffffc2;
 }
 
-.bar-projects {
-  width: 100%;
-  max-width: 511px;
-  height: 1px;
-  background: #c778dd;
+span > p {
+  font-size: 16px;
+  margin-bottom: 36px;
+  color: #abb2bf;
 }
 
 .Cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
   gap: 30px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .Cards {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-projects-label {
+    gap: 8px;
+  }
+
+  .bar-projects {
+    max-width: 100px;
+  }
+
+  .content-title-projects {
+    gap: 10px;
+  }
 }

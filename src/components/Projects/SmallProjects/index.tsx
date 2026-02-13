@@ -3,8 +3,6 @@ import "./styles.css";
 import { Card } from "../../Geral/Card";
 import { Titles } from "../../Geral/Titles";
 
-import Countdown from "../../../assets/Countdown.png";
-import LoginForm from "../../../assets/Login-Form-CSS.png";
 import { SimpleApps } from "../../../compose";
 
 export function SmallProjects() {
