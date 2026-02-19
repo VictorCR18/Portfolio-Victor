@@ -3,30 +3,47 @@ import { Cross2Icon } from "@radix-ui/react-icons";
 import Whatsapp from "../../../assets/Whatsapp.svg";
 import "./styles.css";
 
+import { useState } from "react"; 
+
+import { sendContactEmail } from "../../../api"; 
+
 interface ContactModalProps {
   children: React.ReactNode;
 }
 
 export function ContactModal({ children }: ContactModalProps) {
-  const handleEmailSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [open, setOpen] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+
+  const handleEmailSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSending(true);
+
     const formData = new FormData(e.currentTarget);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const title = formData.get("title");
-    const message = formData.get("message");
+    
+    const contactData = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      title: formData.get("title") as string,
+      message: formData.get("message") as string,
+    };
 
-    const mailtoLink = `mailto:cavalcantevictor2003@gmail.com?subject=${encodeURIComponent(
-      title as string,
-    )}&body=${encodeURIComponent(
-      `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`,
-    )}`;
-
-    window.location.href = mailtoLink;
+    try {
+      await sendContactEmail(contactData);
+      
+      alert("Mensagem enviada com sucesso!"); 
+      setOpen(false); 
+      
+    } catch (error: any) {
+      console.error("Erro no envio:", error);
+      alert(error.message || "Falha ao enviar a mensagem. Tente novamente mais tarde.");
+    } finally {
+      setIsSending(false); 
+    }
   };
 
   return (
-    <Dialog.Root>
+    <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>{children}</Dialog.Trigger>
 
       <Dialog.Portal>
@@ -55,14 +72,16 @@ export function ContactModal({ children }: ContactModalProps) {
             ></textarea>
 
             <div className="form-actions">
-              <button type="submit" className="button-pre">
-                Send
+              <button type="submit" className="button-pre" disabled={isSending}>
+                {isSending ? "Sending..." : "Send"}
               </button>
+              
               <a
                 href="https://wa.me/5585999458074?text=Hello!"
                 target="_blank"
                 rel="noreferrer"
                 className="whatsapp-button"
+                onClick={() => setOpen(false)}
               >
                 <img src={Whatsapp} alt="WhatsApp" width={20} />
                 WhatsApp
