@@ -1,0 +1,125 @@
+.ContactModalContent {
+  background-color: #282c33;
+  border: 1px solid #abb2bf;
+  padding: 32px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  z-index: 9999;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-title {
+  color: #abb2bf;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: 1px solid #abb2bf;
+  padding: 10px 12px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #abb2bf;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c778dd;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #25d366;
+  padding: 0 16px;
+  height: 37px;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: rgba(37, 211, 102, 0.1);
+}
+
+.IconButton {
+  background-color: transparent; 
+  border: none; 
+  color: #abb2bf;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.IconButton:hover {
+  color: #c778dd; 
+}
+
+.IconButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 500px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

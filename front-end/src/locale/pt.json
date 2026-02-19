@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "header": {
+      "navHome": "início",
+      "navWorks": "projetos",
+      "navAbout": "sobre mim",
+      "navContacts": "contatos"
+    },
+    "pre": {
+      "h2pt1": "Victor é um ",
+      "spanpt1": "Desenvolvedor Fullstack ",
+      "h2pt2": "e",
+      "spanpt2": "Programador Criativo",
+      "label": "Ele constrói aplicações web escaláveis onde performance encontra design.",
+      "lstatus": "Graduando em Sistemas de Informação",
+      "preQuote": "Quando o mundo te empurra, você tem que se levantar e empurrar de volta."
+    },
+    "projects": {
+      "title": "projetos",
+      "viewAll": "Ver tudo ",
+      "listDesc": "Lista dos meus projetos",
+      "completeApps": "apps completos",
+      "smallProjects": {
+        "title": "pequenos projetos",
+        "countdownDesc": "Contador regressivo",
+        "loginDesc": "Tela de login"
+      }
+    },
+    "skills": {
+      "title": "habilidades",
+      "languages": "Linguagens",
+      "languagesDesc": "JavaScript TypeScript Java",
+      "databases": "Banco de Dados",
+      "databasesDesc": "MySQL PostgreSQL Firebase",
+      "tools": "Ferramentas",
+      "toolsDesc": "VSCode Hoppscotch Docker Git Github GitLab",
+      "other": "Outros",
+      "otherDesc": "HTML CSS SCSS Axios NodeJS",
+      "frameworks": "Frameworks",
+      "frameworksDesc": "Angular React Vue Spring Express.js"
+    },
+    "aboutMe": {
+      "title": "sobre mim",
+      "subtitle": "Quem sou eu?",
+      "p1": "Olá, eu sou o Victor!",
+      "p2": "Sou um Desenvolvedor Fullstack no Ceará, Brasil. Posso desenvolver sites responsivos e APIs escaláveis do zero e transformá-los em experiências web modernas e amigáveis.",
+      "p3_part1": "Transformar minha criatividade e conhecimento em software tem sido minha paixão por mais de",
+      "p3_part2": "anos. Tenho ajudado vários projetos e empresas a estabelecerem sua presença online usando o ecossistema JavaScript moderno. Sempre busco aprender sobre as tecnologias e frameworks mais novos.",
+      "button": "Leia mais "
+    },
+    "education": {
+      "title": "minha formação",
+      "tech": {
+        "role": "Técnico em Informática",
+        "date": "2019 - 2021",
+        "institution": "EEEP Flávio Gomes Granjeiro",
+        "description": "Desenvolvimento de Software Desktop, Fundamentos Web Full-Stack e Banco de Dados."
+      },
+      "university": {
+        "role": "Sistemas de Informação",
+        "date": "2022 - Atualmente",
+        "institution": "Universidade Federal do Ceará",
+        "description": "Foco em Arquitetura de Software, Persistência de Dados e Algoritmos de Validação."
+      }
+    },
+    "contacts": {
+      "title": "contatos",
+      "desc": "Estou interessado em oportunidades de trabalho em tempo integral e projetos freelance. No entanto, se você tiver qualquer outra solicitação ou dúvida, não hesite em me contatar.",
+      "messageMe": "Me mande uma mensagem",
+      "otherMedia": "outras mídias"
+    },
+    "footer": {
+      "description": "Desenvolvedor Fullstack",
+      "media": "Mídias",
+      "copy": "Todos os direitos reservados"
+    }
+  }
+}

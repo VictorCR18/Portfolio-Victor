@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "header": {
+      "navHome": "home",
+      "navWorks": "works",
+      "navAbout": "about me",
+      "navContacts": "contacts"
+    },
+    "pre": {
+      "h2pt1": "Victor is a ",
+      "spanpt1": "Fullstack Developer ",
+      "h2pt2": "and",
+      "spanpt2": "Creative Coder",
+      "label": "He builds scalable web applications where performance meets design.",
+      "lstatus": "Majoring in Information Systems",
+      "preQuote": "When the world pushes you, you just have to get up and push back."
+    },
+    "projects": {
+      "title": "projects",
+      "viewAll": "View all ",
+      "listDesc": "List of my projects",
+      "completeApps": "complete apps",
+      "smallProjects": {
+        "title": "small projects",
+        "countdownDesc": "Regressive counter",
+        "loginDesc": "Login screen"
+      }
+    },
+    "skills": {
+      "title": "skills",
+      "languages": "Languages",
+      "languagesDesc": "JavaScript TypeScript Java",
+      "databases": "Databases",
+      "databasesDesc": "MySQL PostgreSQL Firebase",
+      "tools": "Tools",
+      "toolsDesc": "VSCode Hoppscotch Docker Git Github GitLab",
+      "other": "Other",
+      "otherDesc": "HTML CSS SCSS Axios NodeJS",
+      "frameworks": "Frameworks",
+      "frameworksDesc": "Angular React Vue Spring Express.js"
+    },
+    "aboutMe": {
+      "title": "about me",
+      "subtitle": "Who am I?",
+      "p1": "Hello, I'm Victor!",
+      "p2": "I’m a Fullstack Developer based in Ceará, Brazil. I can develop responsive websites and scalable APIs from scratch and raise them into modern user-friendly web experiences.",
+      "p3_part1": "Transforming my creativity and knowledge into software has been my passion for over",
+      "p3_part2": "years. I have been helping various projects and companies to establish their presence online using the modern JavaScript ecosystem. I always strive to learn about the newest technologies and frameworks.",
+      "button": "Read more "
+    },
+    "education": {
+      "title": "my education",
+      "tech": {
+        "role": "Computer Technician",
+        "date": "2019 - 2021",
+        "institution": "EEEP Flávio Gomes Granjeiro",
+        "description": "Development of Desktop Software, Web Full-Stack foundations & Database basics."
+      },
+      "university": {
+        "role": "Information Systems",
+        "date": "2022 - Present",
+        "institution": "Universidade Federal do Ceará",
+        "description": "Focusing on Software Architecture, Data Persistence, and Validation algorithms."
+      }
+    },
+    "contacts": {
+      "title": "contacts",
+      "desc": "I’m interested in full-time opportunities and freelance projects. However, if you have any other request or question, don't hesitate to contact me.",
+      "messageMe": "Message me here",
+      "otherMedia": "other media"
+    },
+    "footer": {
+      "description": "Fullstack developer",
+      "media": "Media",
+      "copy": "All rights reserved"
+    }
+  }
+}
