@@ -13,7 +13,8 @@ import { Cross2Icon } from "@radix-ui/react-icons";
 import MyContext from "../../../utils/translateContext";
 
 export function Header() {
-  const { t, handleChangeLanguage }: any = useContext(MyContext);
+  const { t, handleChangeLanguage, currentLanguage }: any =
+    useContext(MyContext);
 
   const Modal = () => (
     <Dialog.Root>
@@ -71,6 +72,7 @@ export function Header() {
 
               <select
                 id="mySelectMobile"
+                value={currentLanguage.toUpperCase()}
                 onChange={handleChangeLanguage}
                 className="select"
                 name="language"
@@ -141,6 +143,7 @@ export function Header() {
 
         <select
           id="mySelect"
+          value={currentLanguage.toUpperCase()}
           onChange={handleChangeLanguage}
           className="select"
           name="language"
