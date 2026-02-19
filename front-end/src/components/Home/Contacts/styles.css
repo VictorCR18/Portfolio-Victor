@@ -89,6 +89,14 @@
   gap: 24px;
 }
 
+.instagram {
+  margin: 4px;
+}
+
+.whatsapp {
+  margin: 4px;
+}
+
 @media (max-width: 900px) {
   .content-contacts {
     flex-direction: column;
