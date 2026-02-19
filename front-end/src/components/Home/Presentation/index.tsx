@@ -23,9 +23,17 @@ export function Presentation() {
           </h2>
           <p className="subtitle">{t("pre.label")}</p>
 
-          <ContactModal>
-            <button className="button-pre">{t("pre.button")}!!</button>
-          </ContactModal>
+          <div className="action-buttons">
+            <ContactModal>
+              <button className="button-pre">{t("pre.button")}!!</button>
+            </ContactModal>
+
+            <a href="/curriculo.pdf" download="Curriculo_Victor.pdf">
+              <button className="button-outline">
+                Download Curriculum Vitae
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className="ilustration">

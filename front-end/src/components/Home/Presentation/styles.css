@@ -58,6 +58,51 @@ button.button-pre:hover {
   background-color: rgba(199, 120, 221, 0.1);
 }
 
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+button.button-outline {
+  width: 148px;
+  height: 37px;
+  background-color: transparent;
+  font-weight: 500;
+  color: #abb2bf;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+
+  border: 2px solid transparent;
+
+  border-image: conic-gradient(
+      from var(--angle),
+      #abb2bf 0%,
+      #abb2bf 40%,
+      #c778dd 85%,
+      #ffffff 95%,
+      #c778dd 98%,
+      #abb2bf 100%
+    )
+    1;
+
+  animation: spin-border 2.5s linear infinite;
+}
+
+button.button-outline:hover {
+  background-color: rgba(171, 178, 191, 0.1);
+  color: #ffffff;
+  border-image: conic-gradient(from var(--angle), #ffffff 0%, #ffffff 100%) 1;
+}
+
 .ilustration {
   flex: 1;
   display: flex;
@@ -186,6 +231,11 @@ button.button-pre:hover {
     gap: 60px;
   }
 
+  .action-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .text-box {
     align-items: center;
     max-width: 100%;
@@ -243,5 +293,11 @@ button.button-pre:hover {
     opacity: 1;
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(199, 120, 221, 0);
+  }
+}
+
+@keyframes spin-border {
+  to {
+    --angle: 360deg;
   }
 }
