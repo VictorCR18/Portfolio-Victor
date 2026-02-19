@@ -24,7 +24,7 @@ export function Presentation() {
           <p className="subtitle">{t("pre.label")}</p>
 
           <ContactModal>
-            <button className="button-pre">Contact me !!</button>
+            <button className="button-pre">{t("pre.button")}!!</button>
           </ContactModal>
         </div>
 

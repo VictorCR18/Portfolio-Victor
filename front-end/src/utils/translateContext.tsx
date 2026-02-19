@@ -12,7 +12,7 @@ export function TranslateContext(props: PropsWithChildren) {
   const [currentLanguage, setCurrentLanguage] = useState(language);
 
   const handleChangeLanguage = () => {
-    const newLanguage = currentLanguage === "en" ? "pt" : "en";
+    const newLanguage = currentLanguage === "pt" ? "en" : "pt";
     changeLanguage(newLanguage);
     setCurrentLanguage(newLanguage);
   };

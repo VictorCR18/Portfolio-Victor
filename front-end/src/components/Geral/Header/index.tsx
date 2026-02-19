@@ -1,6 +1,10 @@
 import "./styles.css";
 import Union from "../../../assets/Union.svg";
 
+import Discord from "../../../assets/Discord.svg";
+import Linkedin from "../../../assets/Linkedin.svg";
+import Github from "../../../assets/Github.svg";
+
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -71,9 +75,29 @@ export function Header() {
                 className="select"
                 name="language"
               >
-                <option value="EN">EN</option>
                 <option value="PT">PT</option>
+                <option value="EN">EN</option>
               </select>
+
+              <div className="mobile-media-icons">
+                <a
+                  href="https://github.com/VictorCR18"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Github} alt="Github" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/victor-cavalcante-421349198/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Linkedin} alt="Linkedin" />
+                </a>
+                <a href="#" aria-label="Discord">
+                  <img src={Discord} alt="Discord" />
+                </a>
+              </div>
             </div>
           </Dialog.Description>
 
