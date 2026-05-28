@@ -114,7 +114,7 @@ button.button-outline:hover {
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 360px;
   display: flex;
   justify-content: center;
 }

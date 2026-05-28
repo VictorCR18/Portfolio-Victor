@@ -5,7 +5,7 @@ import MyContext from "../../../utils/translateContext";
 import { Titles } from "../../Geral/Titles";
 import "./styles.css";
 
-import Person from "../../../assets/Person.png";
+import Person from "../../../assets/Perfil.png";
 import Dots from "../../../assets/Dots.svg";
 import Dots2 from "../../../assets/Dots2.svg";
 import { AboutMeProps } from "../../../types";

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import Perfil from "../../../assets/Perfil.png";
+import Perfil from "../../../assets/perfil2.png";
 import Logo from "../../../assets/Logo.svg";
 import Dots from "../../../assets/Dots.svg";
 
