@@ -39,7 +39,12 @@ export function Presentation() {
               <button className="button-pre">{t("pre.button")}!!</button>
             </ContactModal>
 
-            <a href="curriculo_victor.pdf" download="curriculo_Victor.pdf">
+            <a
+              href="https://victorcavalcantedev.vercel.app/curriculo_victor.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="curriculo_Victor.pdf"
+            >
               <button className="button-outline">
                 Download Curriculum Vitae
               </button>
