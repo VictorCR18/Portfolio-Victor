@@ -1,7 +1,7 @@
 import { CardProps } from "../types";
 
 import IronFit from "./../assets/IronFit.webp";
-import Carrinho from "./../assets/Carrinho.webp";
+import CarrinhoPlus from "./../assets/CarrinhoPlus.webp";
 import Countdown from "./../assets/Countdown.webp";
 import LoginForm from "./../assets/Login-Form-CSS.webp";
 import Cafta from "./../assets/Cafta.webp";
@@ -15,7 +15,7 @@ const CompleteApps: CardProps[] = [
     link: "https://cafta-acervo-digital.vercel.app/",
   },
   {
-    image: Carrinho,
+    image: CarrinhoPlus,
     tools: "React SCSS NodeJs Express Prisma PostgreSQL",
     nameProj: "Carrinho+",
     description: "projects.completeApps.carrinhoDesc",
