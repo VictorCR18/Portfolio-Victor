@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <TranslateContext>
       <BrowserRouter>
-        {/* <StarBurstBackground /> */}
+        <StarBurstBackground />
         <Media />
         <Header />
         <ScrollToTop />

@@ -14,13 +14,13 @@ type StarBurstBackgroundProps = {
 };
 
 const DEFAULTS: Required<Omit<StarBurstBackgroundProps, "className">> = {
-  speed: 2,
-  starCount: 100,
+  speed: 1,
+  starCount: 60,
   color: "#ffffff", // acompanha --color-accent do global.css
   centerX: 100,
   centerY: 0,
   starSize: 12,
-  opacity: 50,
+  opacity: 20,
   flowerIntensity: 3,
   twinkleSpeed: 4,
 };
