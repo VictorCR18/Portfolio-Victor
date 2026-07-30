@@ -306,13 +306,6 @@ button.button-outline:hover {
   }
 }
 
-@media (max-width: 480px) {
-  .typed-line {
-    white-space: normal;
-    display: block;
-  }
-}
-
 @keyframes pulse-online {
   0% {
     opacity: 1;
