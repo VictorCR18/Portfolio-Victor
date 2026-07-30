@@ -4,15 +4,19 @@
       "navHome": "início",
       "navWorks": "projetos",
       "navAbout": "sobre mim",
-      "navContacts": "contatos"
+      "navContacts": "contatos",
+      "openMenu": "Abrir menu"
     },
     "pre": {
       "h2pt1": "Victor é um ",
       "spanpt1": "Desenvolvedor Fullstack ",
       "h2pt2": "e",
-      "spanpt2": "Programador Criativo",
+      "spanpt2": "Programador ",
+      "adjectives": ["Criativo", "Dedicado", "Ágil", "Apaixonado"],
       "label": "Ele constrói aplicações web escaláveis onde performance encontra design.",
       "lstatus": "Graduando em Sistemas de Informação",
+      "imageAlt": "Foto de perfil de Victor, Desenvolvedor Fullstack",
+      "scrollHint": "Role para baixo",
       "preQuote": "Quando o mundo te empurra, você tem que se levantar e empurrar de volta.",
       "button": "Contate-me "
     },
@@ -20,7 +24,12 @@
       "title": "projetos",
       "viewAll": "Ver tudo ",
       "listDesc": "Lista dos meus projetos",
-      "completeApps": "apps completos",
+      "completeApps": {
+        "title": "apps completos",
+        "caftaDesc": "Um acervo digital do Centro Acadêmico Cafta",
+        "carrinhoDesc": "Site de e-commerce de supermercado fictício",
+        "ironfitDesc": "Site de academia fictício"
+      },
       "smallProjects": {
         "title": "pequenos projetos",
         "countdownDesc": "Contador regressivo",
@@ -43,6 +52,7 @@
     "aboutMe": {
       "title": "sobre mim",
       "subtitle": "Quem sou eu?",
+      "imageAlt": "Foto de Victor sorrindo para a câmera",
       "p1": "Olá, eu sou o Victor!",
       "p2": "Sou um Desenvolvedor Fullstack no Ceará, Brasil. Posso desenvolver sites responsivos e APIs escaláveis do zero e transformá-los em experiências web modernas e amigáveis.",
       "p3_part1": "Transformar minha criatividade e conhecimento em software tem sido minha paixão por mais de",

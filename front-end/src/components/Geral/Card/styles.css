@@ -1,16 +1,36 @@
 .main-card {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  border: 1px solid #abb2bf;
-  background-color: transparent;
-  height: 100%;
+  width: 304px;
+  height: 400px;
+  border: 1px solid var(--color-border-soft, rgba(171, 178, 191, 0.25));
+  border-radius: 10px;
+  background: rgba(53, 58, 68, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition:
+    transform 0.4s var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)),
+    box-shadow 0.4s var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)),
+    border-color 0.4s ease;
+}
+
+.main-card:hover,
+.main-card:focus-within {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(199, 120, 221, 0.3);
+  border-color: rgba(199, 120, 221, 0.5);
 }
 
 .image-card {
+  position: relative;
   width: 100%;
   height: 201px;
-  border-bottom: 1px solid #abb2bf;
+  border-bottom: 1px solid rgba(171, 178, 191, 0.25);
+  overflow: hidden;
 }
 
 .image {
@@ -18,39 +38,76 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  transition: transform 0.5s ease;
 }
 
-.tools-card {
-  padding: 8px;
-  border-bottom: 1px solid #abb2bf;
+.main-card:hover .image,
+.main-card:focus-within .image {
+  transform: scale(1.06);
 }
 
-.tools-card > span {
-  color: #abb2bf;
-  font-family: "Fira Code", monospace;
-  font-size: 16px;
+/* Tech-stack tags: hidden by default, revealed as an overlay on hover
+   (or keyboard focus within the card) to keep the resting card clean. */
+.card-tech-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(40, 44, 51, 0.9);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  pointer-events: none;
+}
+
+.main-card:hover .card-tech-overlay,
+.main-card:focus-within .card-tech-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.card-tech-tag {
+  padding: 4px 10px;
+  border: 1px solid rgba(199, 120, 221, 0.5);
+  background: rgba(199, 120, 221, 0.12);
+  color: #ffffff;
+  font-family: var(--font-heading, "Fira Code", monospace);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 .content-card {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   flex-grow: 1;
 }
 
 .content-card h3 {
-  font-family: "Fira Code", monospace;
-  font-weight: 500;
-  font-size: 24px;
-  color: #ffffff;
+  font-size: 22px;
   margin: 0;
 }
 
 .content-card p {
+  font-family: var(--font-body, "Inter", sans-serif);
   color: #abb2bf;
-  font-family: "Fira Code", monospace;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -62,13 +119,48 @@
   display: inline-block;
   padding: 8px 16px;
   border: 1px solid #c778dd;
-  font-family: "Fira Code", monospace;
+  border-radius: 4px;
   font-weight: 500;
   color: #ffffff;
-  text-decoration: none;
-  transition: 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 
-.link-card:hover {
+.link-card:hover,
+.link-card:focus-visible {
   background-color: rgba(199, 120, 221, 0.2);
+  transform: translateX(2px);
+}
+
+/* Touch devices can't hover: show the tags as a static row instead of an
+   overlay so the information isn't hidden behind an unreachable gesture. */
+@media (hover: none) {
+  .card-tech-overlay {
+    position: static;
+    opacity: 1;
+    transform: none;
+    background: transparent;
+    backdrop-filter: none;
+    justify-content: flex-start;
+    padding: 12px 16px 0;
+  }
+
+  .card-tech-tag {
+    background: rgba(199, 120, 221, 0.08);
+  }
+
+  .main-card:hover,
+  .main-card:focus-within {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-card,
+  .image,
+  .card-tech-overlay,
+  .link-card {
+    transition: none;
+  }
 }

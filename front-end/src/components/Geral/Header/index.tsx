@@ -19,11 +19,15 @@ export function Header() {
   const Modal = () => (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <div className="hamburguer" aria-label="Abrir menu">
+        <button
+          type="button"
+          className="hamburguer"
+          aria-label={t("header.openMenu")}
+        >
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
-        </div>
+        </button>
       </Dialog.Trigger>
 
       <Dialog.Portal>

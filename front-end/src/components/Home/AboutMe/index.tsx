@@ -1,22 +1,27 @@
-import { useContext } from "react"
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import MyContext from "../../../utils/translateContext";
 
 import { Titles } from "../../Geral/Titles";
 import "./styles.css";
 
-import Person from "../../../assets/Perfil.png";
+import Person from "../../../assets/Perfil.webp";
 import Dots from "../../../assets/Dots.svg";
 import Dots2 from "../../../assets/Dots2.svg";
 import { AboutMeProps } from "../../../types";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
 
 export function AboutMe({ symbol, display }: AboutMeProps) {
   const { t }: any = useContext(MyContext);
   const currentYear = new Date().getFullYear();
   const yearsOfExperience = currentYear - 2024;
+  const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <div className="main-aboutme">
+    <div
+      ref={ref}
+      className={`main-aboutme reveal ${isVisible ? "reveal-visible" : ""}`}
+    >
       <div className="title-aboutme">
         <div className="title-header">
           <Titles symbol={symbol} title={t("aboutMe.title")} />
@@ -51,9 +56,14 @@ export function AboutMe({ symbol, display }: AboutMeProps) {
         </div>
 
         <div className="picture-aboutme">
-          <img className="person" src={Person} alt="Me" />
-          <img className="dots-aboutme" src={Dots} alt="" />
-          <img className="dots2-aboutme" src={Dots2} alt="" />
+          <img
+            className="person"
+            src={Person}
+            alt={t("aboutMe.imageAlt")}
+            loading="lazy"
+          />
+          <img className="dots-aboutme" src={Dots} alt="" loading="lazy" />
+          <img className="dots2-aboutme" src={Dots2} alt="" loading="lazy" />
         </div>
       </div>
     </div>

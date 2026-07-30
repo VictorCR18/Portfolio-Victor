@@ -9,14 +9,22 @@ export function Media() {
     <div className="media-link">
       <div className="line-media"></div>
       <div className="media-icons">
-        <a href="https://github.com/VictorCR18">
-          <img className="icons" src={Github} />
+        <a
+          href="https://github.com/VictorCR18"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="icons" src={Github} alt="Github" />
         </a>
-        <a href="https://www.linkedin.com/in/victor-cavalcante-421349198/">
-          <img className="icons" src={Linkedin} />
+        <a
+          href="https://www.linkedin.com/in/victor-cavalcante-421349198/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="icons" src={Linkedin} alt="LinkedIn" />
         </a>
-        <a>
-          <img className="icons" src={Discord} />
+        <a href="#" aria-label="Discord">
+          <img className="icons" src={Discord} alt="" />
         </a>
       </div>
     </div>

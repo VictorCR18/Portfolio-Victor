@@ -1,16 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Core palette -- unchanged from the original "code editor" identity,
+     centralized here so every new rule references the same source of truth. */
+  --color-bg: #282c33;
+  --color-bg-elevated: #2f333c;
+  --color-text: #abb2bf;
+  --color-text-strong: #ffffff;
+  --color-accent: #c778dd;
+  --color-accent-soft: rgba(199, 120, 221, 0.12);
+  --color-border: #abb2bf;
+  --color-border-soft: rgba(171, 178, 191, 0.25);
+
+  /* Typography: Fira Code keeps the "code editor" voice for headings and
+     UI labels; Inter takes over for long-form body copy so paragraphs stay
+     comfortable to read at any length. */
+  --font-heading: "Fira Code", "Courier New", monospace;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #abb2bf;
-  font-family: "Fira Code", monospace;
   text-decoration: none;
 }
 
 html {
-  background-color: #282c33;
+  background-color: var(--color-bg);
   max-width: 100%;
   width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Typographic hierarchy ---------- */
+/* Headings and interactive controls stay on Fira Code to preserve the
+   "code editor" identity; sizes now step down predictably (H1 > H2 > H3)
+   with a line-height tuned for each scale. */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea,
+select,
+.Symbol,
+.Title {
+  font-family: var(--font-heading);
+  color: var(--color-text-strong);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.6rem + 2.5vw, 3.25rem);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ---------- Accessibility ---------- */
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Scroll reveal (fade-in + slide) ---------- */
+/* Paired with the useScrollReveal hook: sections start hidden/offset and
+   settle into place once they enter the viewport. */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.8s var(--ease-out-expo),
+    transform 0.8s var(--ease-out-expo);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

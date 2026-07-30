@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import { useContext } from "react";
-import MyContext from "../../../utils/translateContext"; 
+import MyContext from "../../../utils/translateContext";
 
 import Dots from "../../../assets/Dots.svg";
 import Rectangle from "../../../assets/Rectangle.svg";
@@ -10,13 +10,18 @@ import Logo from "../../../assets/Logo.svg";
 import { Titles } from "../../Geral/Titles";
 import { CardNote } from "../../Geral/CardNote";
 import { SkillsProps } from "../../../types";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
 
 export function Skills({ symbol, display }: SkillsProps) {
   const { t }: any = useContext(MyContext);
   const showDecoration = display === "inline";
+  const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <div className="main-skills">
+    <div
+      ref={ref}
+      className={`main-skills reveal ${isVisible ? "reveal-visible" : ""}`}
+    >
       <div className="titles-skills">
         <Titles symbol={symbol} title={t("skills.title")} />
         <div
@@ -28,11 +33,11 @@ export function Skills({ symbol, display }: SkillsProps) {
       <div className="content-skills">
         {showDecoration && (
           <div className="box-pictures">
-            <img className="Dots1" src={Dots} alt="" />
-            <img className="Dots2" src={Dots} alt="" />
-            <img className="Rectangle1" src={Rectangle} alt="" />
-            <img className="Rectangle2" src={Rectangle} alt="" />
-            <img className="Logo2" src={Logo} alt="" />
+            <img className="Dots1" src={Dots} alt="" loading="lazy" />
+            <img className="Dots2" src={Dots} alt="" loading="lazy" />
+            <img className="Rectangle1" src={Rectangle} alt="" loading="lazy" />
+            <img className="Rectangle2" src={Rectangle} alt="" loading="lazy" />
+            <img className="Logo2" src={Logo} alt="" loading="lazy" />
           </div>
         )}
 

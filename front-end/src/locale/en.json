@@ -4,15 +4,19 @@
       "navHome": "home",
       "navWorks": "works",
       "navAbout": "about me",
-      "navContacts": "contacts"
+      "navContacts": "contacts",
+      "openMenu": "Open menu"
     },
     "pre": {
       "h2pt1": "Victor is a ",
       "spanpt1": "Fullstack Developer ",
       "h2pt2": "and",
-      "spanpt2": "Creative Coder",
+      "spanpt2": "Coder who's ",
+      "adjectives": ["Creative", "Dedicated", "Agile", "Passionate"],
       "label": "He builds scalable web applications where performance meets design.",
       "lstatus": "Majoring in Information Systems",
+      "imageAlt": "Victor's profile photo, Fullstack Developer",
+      "scrollHint": "Scroll down",
       "preQuote": "When the world pushes you, you just have to get up and push back.",
       "button": "Contact me "
     },
@@ -20,7 +24,12 @@
       "title": "projects",
       "viewAll": "View all ",
       "listDesc": "List of my projects",
-      "completeApps": "complete apps",
+      "completeApps": {
+        "title": "complete apps",
+        "caftaDesc": "Cafta Digital Archive",
+        "carrinhoDesc": "Fictional supermarket e-commerce website",
+        "ironfitDesc": "Fictional gym website"
+      },
       "smallProjects": {
         "title": "small projects",
         "countdownDesc": "Regressive counter",
@@ -43,6 +52,7 @@
     "aboutMe": {
       "title": "about me",
       "subtitle": "Who am I?",
+      "imageAlt": "Photo of Victor smiling at the camera",
       "p1": "Hello, I'm Victor!",
       "p2": "I’m a Fullstack Developer based in Ceará, Brazil. I can develop responsive websites and scalable APIs from scratch and raise them into modern user-friendly web experiences.",
       "p3_part1": "Transforming my creativity and knowledge into software has been my passion for over",

@@ -1,24 +1,32 @@
 import { CardProps } from "../types";
 
-import IronFit from "./../assets/IronFit.png";
-import Carrinho from "./../assets/Carrinho.png";
-import Countdown from "./../assets/Countdown.png";
-import LoginForm from "./../assets/Login-Form-CSS.png";
+import IronFit from "./../assets/IronFit.webp";
+import Carrinho from "./../assets/Carrinho.webp";
+import Countdown from "./../assets/Countdown.webp";
+import LoginForm from "./../assets/Login-Form-CSS.webp";
+import Cafta from "./../assets/Cafta.webp";
 
 const CompleteApps: CardProps[] = [
   {
-    image: IronFit,
-    tools: "Vue.js Vuetify SpringBoot PostgreSQL Firebase",
-    nameProj: "IronFit",
-    description: "Fitness app",
-    link: "https://iron-fit-pied.vercel.app/",
+    image: Cafta,
+    tools: "Next.js TailwindCSS TypeScript NodeJs Express PostgreSQL Prisma Cloudflare",
+    nameProj: "SiteCafta",
+    description: "projects.completeApps.caftaDesc",
+    link: "https://cafta-acervo-digital.vercel.app/",
   },
   {
     image: Carrinho,
     tools: "React SCSS NodeJs Express Prisma PostgreSQL",
     nameProj: "Carrinho+",
-    description: "Shopping cart app",
+    description: "projects.completeApps.carrinhoDesc",
     link: "https://carrinho-seven.vercel.app/",
+  },
+  {
+    image: IronFit,
+    tools: "Vue.js Vuetify SpringBoot PostgreSQL Firebase",
+    nameProj: "IronFit",
+    description: "projects.completeApps.ironfitDesc",
+    link: "https://iron-fit-pied.vercel.app/",
   },
 ];
 

@@ -28,3 +28,9 @@
   border-top: none;
   padding: 8px;
 }
+
+.description-cardnode label {
+  font-family: var(--font-heading, "Fira Code", monospace);
+  display: block;
+  line-height: 1.5;
+}

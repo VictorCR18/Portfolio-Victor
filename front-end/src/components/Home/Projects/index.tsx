@@ -8,12 +8,17 @@ import { Titles } from "../../Geral/Titles";
 import { Link } from "react-router-dom";
 import { ProjectsProps } from "../../../types";
 import { CompleteApps } from "../../../compose";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
 
 export function Projects({ symbol, display }: ProjectsProps) {
   const { t }: any = useContext(MyContext);
+  const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <div className="main-projects">
+    <div
+      ref={ref}
+      className={`main-projects reveal ${isVisible ? "reveal-visible" : ""}`}
+    >
       <div className="title-projects">
         <div className="content-title-projects">
           <div className="title-projects-label">
@@ -34,7 +39,7 @@ export function Projects({ symbol, display }: ProjectsProps) {
           {display !== "inline" && (
             <>
               <p>{t("projects.listDesc")}</p>
-              <Titles symbol="#" title={t("projects.completeApps")} />
+              <Titles symbol="#" title={t("projects.completeApps.title")} />
             </>
           )}
         </span>

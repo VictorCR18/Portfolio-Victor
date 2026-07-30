@@ -45,6 +45,9 @@
 .hamburguer {
   display: none;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .label-header {
@@ -71,6 +74,18 @@
 }
 
 .select:hover {
+  color: #ffffff;
+}
+
+.select option {
+  background-color: #282c33;
+  color: #abb2bf;
+}
+
+.select option:hover,
+.select option:checked,
+.select option:focus {
+  background-color: #3a3f4b;
   color: #ffffff;
 }
 
