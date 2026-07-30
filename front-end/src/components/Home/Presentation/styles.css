@@ -291,11 +291,25 @@ button.button-outline:hover {
   .box-quote {
     margin-top: 60px;
   }
+  .typed-line {
+    display: inline-block;
+    white-space: nowrap; 
+  }
 
   .typed-adjective {
     display: inline-block;
     min-width: 1ch;
-    line-height: 1.4em;
+  }
+
+  h1 {
+    min-height: calc(3 * 1.2em);
+  }
+}
+
+@media (max-width: 480px) {
+  .typed-line {
+    white-space: normal;
+    display: block;
   }
 }
 
