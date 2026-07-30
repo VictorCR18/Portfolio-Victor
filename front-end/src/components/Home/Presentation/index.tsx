@@ -39,7 +39,7 @@ export function Presentation() {
               <button className="button-pre">{t("pre.button")}!!</button>
             </ContactModal>
 
-            <a href="/Curriculo.pdf" download="Curriculo_Victor.pdf">
+            <a href="curriculo_victor.pdf" download="curriculo_Victor.pdf">
               <button className="button-outline">
                 Download Curriculum Vitae
               </button>
