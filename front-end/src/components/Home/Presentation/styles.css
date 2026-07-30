@@ -294,18 +294,16 @@ button.button-outline:hover {
 
   .typed-line {
     display: inline-block;
-    white-space: nowrap; /* impede quebra no meio da palavra digitada */
+    white-space: nowrap; 
   }
 
   .typed-adjective {
     display: inline-block;
-    min-width: 1ch; /* evita colapso quando displayText está vazio */
+    min-width: 1ch;
   }
 
-  /* reserva altura de 1 linha extra pro h1 pra não "pular" quando o .typed-line
-   quebra pra linha de baixo em telas muito estreitas */
-  h1 {
-    min-height: calc(3 * 1.2em); /* ajuste conforme o line-height do h1 */
+   h1 {
+    min-height: calc(3 * 1.2em); 
   }
 }
 
