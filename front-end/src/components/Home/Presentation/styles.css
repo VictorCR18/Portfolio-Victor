@@ -287,6 +287,11 @@ button.button-outline:hover {
   .box-quote {
     margin-top: 60px;
   }
+
+  .typed-adjective {
+    display: inline-block;
+    min-width: 8ch;
+  }
 }
 
 @keyframes pulse-online {
