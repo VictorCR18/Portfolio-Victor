@@ -9,6 +9,8 @@ export default function ScrollButton() {
   const scrollHintRef = useRef<HTMLButtonElement | null>(null);
   const [hidden, setHidden] = useState(false);
 
+  const scrollHintLabel = t("pre.scrollHint") ?? "";
+
   useEffect(() => {
     const reduceMotion = window.matchMedia?.(
       "(prefers-reduced-motion: reduce)",
@@ -28,7 +30,7 @@ export default function ScrollButton() {
       ref={scrollHintRef}
       type="button"
       className={`scroll-indicator${hidden ? " scroll-indicator-hidden" : ""}`}
-      aria-label={t("pre.scrollHint")}
+      aria-label={scrollHintLabel}
       onClick={() =>
         window.scrollBy({
           top: window.innerHeight * 0.85,
@@ -39,7 +41,7 @@ export default function ScrollButton() {
       <span className="scroll-indicator-mouse">
         <span className="scroll-indicator-dot"></span>
       </span>
-      <span className="scroll-indicator-label">{t("pre.scrollHint")}</span>
+      <span className="scroll-indicator-label">{scrollHintLabel}</span>
     </button>
   );
 }
