@@ -9,7 +9,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:3000",
-      "https://portifolio-victor-plum.vercel.app",
+      "https://victorcavalcantedev.vercel.app"
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
