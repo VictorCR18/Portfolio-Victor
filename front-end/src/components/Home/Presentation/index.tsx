@@ -26,9 +26,8 @@ export function Presentation() {
         <div className="text-box">
           <h1>
             {t("pre.h2pt1")}
-            <span>{t("pre.spanpt1")}</span> {t("pre.h2pt2")}
-            <br />
-            <span className="typed-line">
+            <span>{t("pre.spanpt1")}</span> {t("pre.h2pt2")}{" "}
+            <span>
               {t("pre.spanpt2")}{" "}
               <Typewriter words={adjectives} className="typed-adjective" />
             </span>
