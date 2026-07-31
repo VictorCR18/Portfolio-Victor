@@ -5,7 +5,7 @@ import CarrinhoPlus from "./../assets/CarrinhoPlus.webp";
 import Countdown from "./../assets/Countdown.webp";
 import LoginForm from "./../assets/Login-Form-CSS.webp";
 import Cafta from "./../assets/Cafta.webp";
-import RickAndMorty from "./../assets/RickAndMorty.webp";
+import RickAndMorty from "./../assets/RickAndMortyApp.webp";
 
 const CompleteApps: CardProps[] = [
   {
