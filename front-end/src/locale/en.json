@@ -33,7 +33,8 @@
       "smallProjects": {
         "title": "small projects",
         "countdownDesc": "Regressive counter",
-        "loginDesc": "Login screen"
+        "loginDesc": "Login screen",
+        "rickAndMortyDesc": "Rick and Morty API consumer"
       }
     },
     "skills": {

@@ -5,6 +5,7 @@ import CarrinhoPlus from "./../assets/CarrinhoPlus.webp";
 import Countdown from "./../assets/Countdown.webp";
 import LoginForm from "./../assets/Login-Form-CSS.webp";
 import Cafta from "./../assets/Cafta.webp";
+import RickAndMorty from "./../assets/RickAndMorty.webp";
 
 const CompleteApps: CardProps[] = [
   {
@@ -31,6 +32,13 @@ const CompleteApps: CardProps[] = [
 ];
 
 const SimpleApps: CardProps[] = [
+  {
+    image: RickAndMorty,
+    tools: "React HTML CSS TypeScript",
+    nameProj: "Rick and Morty",
+    description: "projects.smallProjects.rickAndMortyDesc",
+    link: "https://rick-and-morty-app-ochre-chi.vercel.app",
+  },
   {
     image: Countdown,
     tools: "HTML CSS JavaScript",

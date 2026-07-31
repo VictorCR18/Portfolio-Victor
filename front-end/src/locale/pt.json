@@ -33,7 +33,8 @@
       "smallProjects": {
         "title": "pequenos projetos",
         "countdownDesc": "Contador regressivo",
-        "loginDesc": "Tela de login"
+        "loginDesc": "Tela de login",
+        "rickAndMortyDesc": "Consumidor da API do Rick and Morty"
       }
     },
     "skills": {
