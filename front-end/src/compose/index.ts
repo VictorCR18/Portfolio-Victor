@@ -6,8 +6,16 @@ import Countdown from "./../assets/Countdown.webp";
 import LoginForm from "./../assets/Login-Form-CSS.webp";
 import Cafta from "./../assets/Cafta.webp";
 import RickAndMorty from "./../assets/RickAndMortyApp.webp";
+import Cinematica from "./../assets/Cinematica.webp";
 
 const CompleteApps: CardProps[] = [
+  {
+    image: Cinematica,
+    tools: "React TailwindCSS TypeScript NodeJs Express PostgreSQL Prisma Zod JWT bcrypt",
+    nameProj: "Cinemática",
+    description: "projects.completeApps.cinematicaDesc",
+    link: "https://cinematica-rosy.vercel.app/",
+  },
   {
     image: Cafta,
     tools: "Next.js TailwindCSS TypeScript NodeJs Express PostgreSQL Prisma Cloudflare",

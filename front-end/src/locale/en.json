@@ -26,6 +26,7 @@
       "listDesc": "List of my projects",
       "completeApps": {
         "title": "complete apps",
+        "cinematicaDesc": "Register the movies you watch, rate them with stars, write reviews, and follow other cinephiles.",
         "caftaDesc": "Cafta Digital Archive",
         "carrinhoDesc": "Fictional supermarket e-commerce website",
         "ironfitDesc": "Fictional gym website"
