@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import Perfil from "../../../assets/perfil2.webp";
+import Perfil from "../../../assets/Perfil.webp";
 import Logo from "../../../assets/Logo.svg";
 import Dots from "../../../assets/Dots.svg";
 

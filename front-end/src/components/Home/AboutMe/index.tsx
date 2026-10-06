@@ -5,7 +5,7 @@ import MyContext from "../../../utils/translateContext";
 import { Titles } from "../../Geral/Titles";
 import "./styles.css";
 
-import Person from "../../../assets/Perfil.webp";
+import Person from "../../../assets/perfil2.webp";
 import Dots from "../../../assets/Dots.svg";
 import Dots2 from "../../../assets/Dots2.svg";
 import { AboutMeProps } from "../../../types";
@@ -14,7 +14,7 @@ import { useScrollReveal } from "../../../hooks/useScrollReveal";
 export function AboutMe({ symbol, display }: AboutMeProps) {
   const { t }: any = useContext(MyContext);
   const currentYear = new Date().getFullYear();
-  const yearsOfExperience = currentYear - 2024;
+  const yearsOfExperience = currentYear - 2023;
   const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
