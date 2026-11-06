@@ -91,7 +91,7 @@
   }
 
   .skills-tools {
-    justify-content: center;
+    justify-content: center !important;
     width: 100% !important;
   }
   .box-pictures {
@@ -103,7 +103,4 @@
   .main-skills {
     margin-bottom: 60px;
   }
-   .skills-tools {
-    justify-content: center; 
-   }
 }
